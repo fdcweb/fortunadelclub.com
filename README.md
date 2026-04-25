@@ -1,2 +1,0 @@
-# fortunadelclub.com
-FortunaDelClub Website
