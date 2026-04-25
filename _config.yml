@@ -1,0 +1,12 @@
+# GitHub Pages Configuration – FortunaDelClub
+# Deploy as a static site; no Jekyll processing needed.
+
+# Disable Jekyll processing entirely (we're pure HTML)
+# This prevents GitHub Pages from trying to process the files through Jekyll.
+
+# If using a custom domain (fortunadelclub.com), set it here:
+# (Also create a CNAME file in the repo root)
+
+# No special config needed for pure HTML — this file just signals intent.
+# Uncomment below if you want Jekyll disabled globally:
+# plugins: []

@@ -1,3 +1,1178 @@
-Up and Running...
-<br>
-FortunaDelClub.com
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FortunaDelClub – Lottery Assistance Service for Goa & Kerala State Lotteries</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="FortunaDelClub is an independent lottery assistance and information service for Goa State Lottery (Rajshree) and Kerala State Lottery. 7+ years of experience, 1600+ assisted participants." />
+  <meta name="keywords" content="Goa lottery assistance, Kerala lottery assistance, Rajshree 10, Rajshree 300, Kerala bumper lottery, lottery participation help, FDC, FortunaDelClub" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="FortunaDelClub" />
+  <link rel="canonical" href="https://www.fortunadelclub.com/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.fortunadelclub.com/" />
+  <meta property="og:title" content="FortunaDelClub – The Lottery Assistant" />
+  <meta property="og:description" content="Independent lottery assistance & information for Goa and Kerala State Lotteries. Transparent, responsible, and experienced." />
+  <meta property="og:image" content="https://www.fortunadelclub.com/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@fortunadelclub" />
+  <meta name="twitter:title" content="FortunaDelClub – The Lottery Assistant" />
+  <meta name="twitter:description" content="Lottery assistance and guidance for Goa & Kerala State Lotteries. Responsible. Transparent. Experienced." />
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "FortunaDelClub",
+    "alternateName": "FDC",
+    "url": "https://www.fortunadelclub.com",
+    "logo": "https://www.fortunadelclub.com/logo.png",
+    "description": "Independent lottery assistance and informational service for Goa State Lottery and Kerala State Lottery.",
+    "foundingDate": "2017",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "91SpringBoard, St. Inez",
+      "addressLocality": "Panjim",
+      "addressRegion": "Goa",
+      "postalCode": "403001",
+      "addressCountry": "IN"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+91-9645049039",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Hindi", "Malayalam"]
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/fortunadelclub/",
+      "https://www.instagram.com/fortunadelclub/",
+      "https://twitter.com/fortunadelclub",
+      "https://www.linkedin.com/company/fortunadelclub/"
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage (for AI & search snippet eligibility) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does FortunaDelClub do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "FortunaDelClub is an independent lottery assistance and informational service. We provide guidance on official draw schedules, prize structures, participation procedures, and result verification for Goa and Kerala State Lotteries. We do not sell tickets or conduct draws."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is FortunaDelClub affiliated with the Government?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. FortunaDelClub is not affiliated with any State Lottery Department or Government authority. All lottery draws and prize declarations are managed exclusively by the respective state lottery authorities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is participation in Goa and Kerala State Lottery legal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Goa State Lottery and Kerala State Lottery are government-authorised schemes. Participants are responsible for ensuring compliance with the laws applicable in their own jurisdiction."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I contact FortunaDelClub?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can reach FortunaDelClub via WhatsApp at +91 9645049039 or by email at fdc@fortunadelclub.com. Responses are assured within 24 hours."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ===========================
+       CSS CUSTOM PROPERTIES
+    =========================== */
+    :root {
+      --gold:        #C8962E;
+      --gold-light:  #E8B84B;
+      --gold-pale:   #F5E6C3;
+      --deep:        #1A1208;
+      --rich:        #2C1F08;
+      --cream:       #FAF6EE;
+      --muted:       #7A6A50;
+      --border:      #E2D5B8;
+      --white:       #FFFFFF;
+      --radius:      10px;
+      --shadow:      0 4px 24px rgba(26,18,8,0.10);
+      --font-head:   'Playfair Display', Georgia, serif;
+      --font-body:   'DM Sans', sans-serif;
+      --max-w:       1100px;
+      --transition:  0.25s ease;
+    }
+
+    /* ===========================
+       RESET & BASE
+    =========================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: var(--font-body);
+      background: var(--cream);
+      color: var(--deep);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--gold); text-decoration: none; transition: color var(--transition); }
+    a:hover { color: var(--gold-light); }
+    ul { list-style: none; }
+
+    /* ===========================
+       ANNOUNCEMENT BAR
+    =========================== */
+    .announcement-bar {
+      background: var(--gold);
+      color: var(--deep);
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+    .announcement-bar a { color: var(--deep); font-weight: 700; text-decoration: underline; }
+
+    /* ===========================
+       HEADER / NAV
+    =========================== */
+    header {
+      background: var(--deep);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+    }
+    .nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .logo-mark {
+      width: 42px; height: 42px;
+      background: var(--gold);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-head);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--deep);
+      flex-shrink: 0;
+    }
+    .logo-text { line-height: 1.1; }
+    .logo-name {
+      font-family: var(--font-head);
+      font-size: 1.15rem;
+      color: var(--gold-light);
+      font-weight: 700;
+      display: block;
+    }
+    .logo-tagline {
+      font-size: 0.7rem;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      display: block;
+    }
+
+    nav { display: flex; align-items: center; gap: 6px; }
+    nav a {
+      color: #D4C9B0;
+      font-size: 0.85rem;
+      font-weight: 400;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background var(--transition), color var(--transition);
+    }
+    nav a:hover, nav a.active {
+      background: rgba(200,150,46,0.15);
+      color: var(--gold-light);
+    }
+    .nav-cta {
+      background: var(--gold) !important;
+      color: var(--deep) !important;
+      font-weight: 600 !important;
+      padding: 7px 16px !important;
+    }
+    .nav-cta:hover { background: var(--gold-light) !important; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column; gap: 5px;
+      cursor: pointer; padding: 6px;
+    }
+    .hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: var(--gold-light); border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    /* ===========================
+       HERO
+    =========================== */
+    .hero {
+      background: var(--deep);
+      position: relative;
+      overflow: hidden;
+      padding: 80px 24px 90px;
+      text-align: center;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(200,150,46,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(200,150,46,0.08) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .hero-inner { position: relative; max-width: 780px; margin: 0 auto; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(200,150,46,0.15);
+      border: 1px solid rgba(200,150,46,0.35);
+      border-radius: 30px;
+      padding: 6px 18px;
+      font-size: 0.8rem;
+      color: var(--gold-light);
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+    .hero-badge::before { content: '✦'; font-size: 0.65rem; }
+    .hero h1 {
+      font-family: var(--font-head);
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      color: var(--white);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--gold-light);
+    }
+    .hero p {
+      font-size: 1.05rem;
+      color: #C0B49A;
+      max-width: 600px;
+      margin: 0 auto 36px;
+      line-height: 1.75;
+    }
+    .hero-actions {
+      display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold);
+      color: var(--deep);
+      padding: 13px 28px;
+      border-radius: var(--radius);
+      font-weight: 600; font-size: 0.95rem;
+      transition: background var(--transition), transform var(--transition);
+    }
+    .btn-primary:hover { background: var(--gold-light); color: var(--deep); transform: translateY(-1px); }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 8px;
+      border: 1.5px solid rgba(200,150,46,0.5);
+      color: var(--gold-light);
+      padding: 13px 28px;
+      border-radius: var(--radius);
+      font-weight: 500; font-size: 0.95rem;
+      transition: border-color var(--transition), background var(--transition);
+    }
+    .btn-outline:hover {
+      border-color: var(--gold);
+      background: rgba(200,150,46,0.08);
+      color: var(--gold-light);
+    }
+    .hero-stats {
+      display: flex; gap: 40px; justify-content: center;
+      margin-top: 56px; padding-top: 40px;
+      border-top: 1px solid rgba(200,150,46,0.2);
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      font-family: var(--font-head);
+      font-size: 2rem;
+      color: var(--gold-light);
+      font-weight: 700;
+      display: block;
+    }
+    .stat-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ===========================
+       SECTIONS
+    =========================== */
+    section { padding: 72px 24px; }
+    .section-inner { max-width: var(--max-w); margin: 0 auto; }
+    .section-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: var(--font-head);
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 700;
+      color: var(--deep);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .section-sub {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 560px;
+      line-height: 1.7;
+    }
+    .section-head { margin-bottom: 44px; }
+
+    /* ===========================
+       SERVICES CARDS
+    =========================== */
+    .services { background: var(--white); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .service-card {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 32px 28px;
+      background: var(--cream);
+      transition: box-shadow var(--transition), transform var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card:hover { box-shadow: var(--shadow); transform: translateY(-3px); }
+    .service-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    }
+    .service-icon {
+      width: 52px; height: 52px;
+      background: var(--gold-pale);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 18px;
+    }
+    .service-card h2 {
+      font-family: var(--font-head);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--deep);
+      margin-bottom: 10px;
+    }
+    .service-card p { color: var(--muted); font-size: 0.925rem; margin-bottom: 18px; line-height: 1.7; }
+    .service-links { display: flex; flex-direction: column; gap: 6px; }
+    .service-links a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--gold);
+      display: inline-flex; align-items: center; gap: 6px;
+    }
+    .service-links a::after { content: '→'; transition: transform var(--transition); }
+    .service-links a:hover::after { transform: translateX(4px); }
+
+    /* ===========================
+       WHAT WE DO
+    =========================== */
+    .what-we-do { background: var(--cream); }
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .pillar {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 26px 22px;
+      text-align: center;
+    }
+    .pillar-icon { font-size: 2rem; margin-bottom: 14px; }
+    .pillar h3 {
+      font-family: var(--font-head);
+      font-size: 1rem;
+      color: var(--deep);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .pillar p { font-size: 0.875rem; color: var(--muted); line-height: 1.65; }
+
+    /* ===========================
+       DRAW SCHEDULE TABLE
+    =========================== */
+    .draws { background: var(--white); }
+    .draws-tabs {
+      display: flex; gap: 8px; margin-bottom: 28px; flex-wrap: wrap;
+    }
+    .tab-btn {
+      padding: 8px 20px;
+      border-radius: 30px;
+      border: 1.5px solid var(--border);
+      background: transparent;
+      font-family: var(--font-body);
+      font-size: 0.875rem; font-weight: 500;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--gold); border-color: var(--gold);
+      color: var(--deep); font-weight: 600;
+    }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    table {
+      width: 100%; border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    thead { background: var(--deep); color: var(--gold-light); }
+    thead th {
+      padding: 13px 16px; text-align: left;
+      font-weight: 500; font-size: 0.8rem;
+      letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    tbody tr { border-bottom: 1px solid var(--border); transition: background var(--transition); }
+    tbody tr:hover { background: var(--gold-pale); }
+    tbody td { padding: 13px 16px; color: var(--deep); }
+    tbody td:first-child { font-weight: 500; }
+    .badge {
+      display: inline-block; padding: 3px 10px;
+      border-radius: 20px; font-size: 0.75rem; font-weight: 500;
+    }
+    .badge-weekly { background: #E8F5E9; color: #2E7D32; }
+    .badge-monthly { background: #E3F2FD; color: #1565C0; }
+    .badge-bumper { background: #FFF3E0; color: #E65100; }
+
+    /* ===========================
+       FAQ
+    =========================== */
+    .faq { background: var(--cream); }
+    .faq-list { display: flex; flex-direction: column; gap: 12px; max-width: 780px; }
+    details {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    details[open] { border-color: var(--gold); }
+    summary {
+      padding: 18px 22px;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 0.97rem;
+      color: var(--deep);
+      list-style: none;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '+';
+      font-size: 1.3rem; color: var(--gold);
+      font-weight: 300; flex-shrink: 0;
+      transition: transform var(--transition);
+    }
+    details[open] summary::after { content: '−'; }
+    .faq-answer {
+      padding: 0 22px 18px;
+      color: var(--muted);
+      font-size: 0.925rem;
+      line-height: 1.75;
+    }
+    .faq-answer a { color: var(--gold); font-weight: 500; }
+
+    /* ===========================
+       ABOUT STRIP
+    =========================== */
+    .about-strip {
+      background: var(--deep);
+      color: var(--white);
+    }
+    .about-inner {
+      max-width: var(--max-w); margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 60px; align-items: center;
+    }
+    .about-text .section-label { color: var(--gold); }
+    .about-text .section-title { color: var(--white); }
+    .about-text p { color: #C0B49A; font-size: 0.95rem; line-height: 1.8; margin-bottom: 16px; }
+    .trust-points { display: flex; flex-direction: column; gap: 14px; margin-top: 24px; }
+    .trust-point {
+      display: flex; align-items: flex-start; gap: 14px;
+    }
+    .trust-point-icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: rgba(200,150,46,0.15);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+    }
+    .trust-point-text h4 { font-size: 0.9rem; font-weight: 600; color: var(--gold-light); margin-bottom: 2px; }
+    .trust-point-text p { font-size: 0.83rem; color: #A09070; margin: 0; }
+    .about-contact {
+      background: rgba(200,150,46,0.08);
+      border: 1px solid rgba(200,150,46,0.25);
+      border-radius: 14px;
+      padding: 36px 30px;
+    }
+    .about-contact h3 {
+      font-family: var(--font-head);
+      font-size: 1.3rem; color: var(--gold-light);
+      margin-bottom: 20px;
+    }
+    .contact-item {
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 16px;
+    }
+    .contact-item-icon {
+      width: 38px; height: 38px;
+      background: rgba(200,150,46,0.12);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; flex-shrink: 0;
+    }
+    .contact-item-info label { display: block; font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+    .contact-item-info a, .contact-item-info span { font-size: 0.92rem; color: var(--gold-light); font-weight: 500; }
+    .wa-community {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px; padding-top: 20px;
+      border-top: 1px solid rgba(200,150,46,0.2);
+    }
+    .wa-btn {
+      flex: 1; min-width: 120px;
+      background: #25D366;
+      color: #fff; text-align: center;
+      padding: 11px 14px; border-radius: 8px;
+      font-size: 0.82rem; font-weight: 600;
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+      transition: opacity var(--transition);
+    }
+    .wa-btn:hover { opacity: 0.85; color: #fff; }
+
+    /* ===========================
+       DISCLAIMER
+    =========================== */
+    .disclaimer {
+      background: #F5EFE3;
+      border-top: 1px solid var(--border);
+      padding: 28px 24px;
+    }
+    .disclaimer-inner {
+      max-width: var(--max-w); margin: 0 auto;
+      display: flex; gap: 14px; align-items: flex-start;
+    }
+    .disclaimer-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 2px; }
+    .disclaimer-text { font-size: 0.83rem; color: var(--muted); line-height: 1.7; }
+    .disclaimer-text a { color: var(--gold); }
+
+    /* ===========================
+       FOOTER
+    =========================== */
+    footer {
+      background: var(--deep);
+      padding: 48px 24px 28px;
+      color: #8A7A60;
+    }
+    .footer-inner { max-width: var(--max-w); margin: 0 auto; }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-brand .logo-name { font-size: 1.1rem; }
+    .footer-brand p { margin-top: 12px; font-size: 0.85rem; color: #6A5A42; line-height: 1.7; }
+    .footer-col h4 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gold); font-weight: 600; margin-bottom: 14px; }
+    .footer-col ul li { margin-bottom: 8px; }
+    .footer-col ul li a { font-size: 0.875rem; color: #8A7A60; }
+    .footer-col ul li a:hover { color: var(--gold-light); }
+    .socials { display: flex; gap: 10px; margin-top: 16px; }
+    .social-link {
+      width: 36px; height: 36px;
+      background: rgba(200,150,46,0.1);
+      border: 1px solid rgba(200,150,46,0.2);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.85rem; color: var(--gold);
+      transition: background var(--transition);
+    }
+    .social-link:hover { background: rgba(200,150,46,0.25); color: var(--gold-light); }
+    .footer-bottom {
+      border-top: 1px solid rgba(200,150,46,0.12);
+      padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+    }
+    .footer-bottom p { font-size: 0.8rem; }
+    .footer-bottom a { color: var(--muted); }
+
+    /* ===========================
+       RESPONSIVE
+    =========================== */
+    @media (max-width: 900px) {
+      .about-inner { grid-template-columns: 1fr; gap: 36px; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      nav { display: none; }
+      nav.open { display: flex; flex-direction: column; position: absolute; top: 68px; left: 0; right: 0; background: var(--deep); padding: 16px; gap: 4px; }
+      .hamburger { display: flex; }
+      .hero-stats { gap: 24px; }
+      .footer-top { grid-template-columns: 1fr; gap: 28px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Announcement -->
+  <div class="announcement-bar" role="banner" aria-label="Latest update">
+    🎟️ Summer Bumper tickets are open for members — 
+    <a href="fdc-updates.html">View updates →</a>
+  </div>
+
+  <!-- Header -->
+  <header role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" aria-label="FortunaDelClub – Home">
+        <div class="logo-mark" aria-hidden="true">FDC</div>
+        <div class="logo-text">
+          <span class="logo-name">FortunaDelClub</span>
+          <span class="logo-tagline">The Lottery Assistant</span>
+        </div>
+      </a>
+
+      <nav role="navigation" aria-label="Main navigation" id="main-nav">
+        <a href="goa-lottery.html">Goa Lottery</a>
+        <a href="kerala-lottery.html">Kerala Lottery</a>
+        <a href="draws.html">Draws</a>
+        <a href="faq.html">FAQs</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
+
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleNav(this)">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-inner">
+      <div class="hero-badge">Trusted Lottery Assistance Service</div>
+      <h1 id="hero-heading">
+        Your Trusted Guide for<br />
+        <em>Goa &amp; Kerala State Lotteries</em>
+      </h1>
+      <p>
+        FortunaDelClub provides clear, responsible informational guidance and 
+        participation assistance for officially conducted state lottery draws — 
+        transparently and in full compliance with applicable regulations.
+      </p>
+      <div class="hero-actions">
+        <a href="goa-lottery.html" class="btn-primary">🗺️ Goa State Lottery</a>
+        <a href="kerala-lottery.html" class="btn-outline">🌴 Kerala State Lottery</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">7+</span>
+          <span class="stat-label">Years Operational</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">1,600+</span>
+          <span class="stat-label">Assisted Participants</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">State Lotteries</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" aria-labelledby="services-heading">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="section-label">Our Services</p>
+        <h2 class="section-title" id="services-heading">Lottery Assistance We Provide</h2>
+        <p class="section-sub">State-authorised lotteries, explained and assisted clearly for interested participants.</p>
+      </div>
+      <div class="services-grid">
+
+        <!-- Goa -->
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">🗺️</div>
+          <h2>Goa State Lottery Assistance</h2>
+          <p>
+            The Goa State Lottery is conducted by the Directorate of Goa State Lotteries. 
+            FDC assists participants with draw schedules, ticket structure guidance, and 
+            result verification for the Rajshree series.
+          </p>
+          <div class="service-links">
+            <a href="goa-lottery.html">Goa Lottery Overview</a>
+            <a href="goa-weekly.html">Weekly – Rajshree 10 (Daily 5:40 PM)</a>
+            <a href="goa-monthly.html">Monthly – Rajshree 300</a>
+            <a href="goa-ticket-format.html">Ticket Number Format</a>
+          </div>
+        </article>
+
+        <!-- Kerala -->
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">🌴</div>
+          <h2>Kerala State Lottery Assistance</h2>
+          <p>
+            Kerala State Lottery runs weekly and bumper draws under the Directorate of 
+            Kerala State Lotteries. FDC provides guidance on each named weekly draw and 
+            bumper lottery schedules.
+          </p>
+          <div class="service-links">
+            <a href="kerala-lottery.html">Kerala Lottery Overview</a>
+            <a href="kerala-weekly.html">Weekly Lottery (Mon–Sun)</a>
+            <a href="kerala-bumper.html">Bumper Lottery</a>
+            <a href="kerala-ticket-format.html">Ticket Number Format</a>
+          </div>
+        </article>
+
+        <!-- Participation -->
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">🤝</div>
+          <h2>Participation Coordination</h2>
+          <p>
+            We help interested participants navigate the process of engaging with official 
+            draw procedures — draw schedules, result checking, prize claim guidance — 
+            all based on publicly available official information.
+          </p>
+          <div class="service-links">
+            <a href="faq.html">Common Lottery Queries &amp; FAQs</a>
+            <a href="contact.html">Get Assistance via WhatsApp</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section class="what-we-do" aria-labelledby="what-we-do-heading">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="section-label">How We Help</p>
+        <h2 class="section-title" id="what-we-do-heading">What FortunaDelClub Does</h2>
+        <p class="section-sub">We assist. We inform. We do not conduct draws or sell tickets.</p>
+      </div>
+      <div class="pillars-grid">
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">📅</div>
+          <h3>Draw Schedule Guidance</h3>
+          <p>We share officially notified draw schedules and dates for Goa and Kerala lotteries.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">🔍</div>
+          <h3>Result Verification Help</h3>
+          <p>We guide participants in checking and verifying draw results through official channels.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">📋</div>
+          <h3>Prize Structure Clarity</h3>
+          <p>We explain prize tiers, ticket series, and number formats based on official notifications.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">🏅</div>
+          <h3>Prize Claim Guidance</h3>
+          <p>General guidance on official prize claim procedures issued by State Lottery Departments.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">💬</div>
+          <h3>Participant Support</h3>
+          <p>Direct WhatsApp support with response assured within 24 hours for all queries.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">🔒</div>
+          <h3>Responsible Participation</h3>
+          <p>We encourage responsible lottery participation and always direct to official sources for final confirmation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DRAW SCHEDULE -->
+  <section class="draws" aria-labelledby="draws-heading">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="section-label">Draw Reference</p>
+        <h2 class="section-title" id="draws-heading">Lottery Draw Schedule Overview</h2>
+        <p class="section-sub">Based on officially notified schedules. Always verify through official government sources.</p>
+      </div>
+
+      <div class="draws-tabs" role="tablist" aria-label="Draw schedules">
+        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-kerala" onclick="switchTab(this,'tab-kerala')">Kerala Weekly</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-bumper" onclick="switchTab(this,'tab-bumper')">Kerala Bumper</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-goa" onclick="switchTab(this,'tab-goa')">Goa Draws</button>
+      </div>
+
+      <div id="tab-kerala" class="tab-content active" role="tabpanel">
+        <table aria-label="Kerala Weekly Lottery Schedule">
+          <thead>
+            <tr><th>Day</th><th>Lottery Name</th><th>Type</th><th>Draw Time</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Monday</td><td>Bhagyathara</td><td><span class="badge badge-weekly">Weekly</span></td><td>3:00 PM</td></tr>
+            <tr><td>Tuesday</td><td>SthreeSakthi</td><td><span class="badge badge-weekly">Weekly</span></td><td>3:00 PM</td></tr>
+            <tr><td>Wednesday</td><td>Dhanalekshmi</td><td><span class="badge badge-weekly">Weekly</span></td><td>3:00 PM</td></tr>
+            <tr><td>Thursday</td><td>KarunyaPlus</td><td><span class="badge badge-weekly">Weekly</span></td><td>3:00 PM</td></tr>
+            <tr><td>Friday</td><td>SuvarnaKeralam</td><td><span class="badge badge-weekly">Weekly</span></td><td>3:00 PM</td></tr>
+            <tr><td>Saturday</td><td>Karunya</td><td><span class="badge badge-weekly">Weekly</span></td><td>3:00 PM</td></tr>
+            <tr><td>Sunday</td><td>Samrudhi</td><td><span class="badge badge-weekly">Weekly</span></td><td>3:00 PM</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="tab-bumper" class="tab-content" role="tabpanel">
+        <table aria-label="Kerala Bumper Lottery Schedule">
+          <thead>
+            <tr><th>Draw Number</th><th>Name</th><th>Type</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>BR-109</td><td>Vishu Bumper 2026</td><td><span class="badge badge-bumper">Bumper</span></td><td>Upcoming</td></tr>
+            <tr><td>BR-108</td><td>Summer Bumper 2026</td><td><span class="badge badge-bumper">Bumper</span></td><td>Tickets Open</td></tr>
+            <tr><td>BR-107</td><td>XMAS New Year Bumper 2025-26</td><td><span class="badge badge-bumper">Bumper</span></td><td>Concluded</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="tab-goa" class="tab-content" role="tabpanel">
+        <table aria-label="Goa Lottery Schedule">
+          <thead>
+            <tr><th>Draw</th><th>Name</th><th>Type</th><th>Draw Time</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Daily</td><td>Rajshree 10</td><td><span class="badge badge-weekly">Daily</span></td><td>5:40 PM</td></tr>
+            <tr><td>Monthly</td><td>Rajshree 300</td><td><span class="badge badge-monthly">Monthly</span></td><td>As notified</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p style="margin-top:16px; font-size:0.8rem; color:var(--muted);">
+        ⚠️ Schedules may change per government notifications. Verify at 
+        <a href="https://statelotteries.goa.gov.in/" target="_blank" rel="noopener">Goa State Lotteries</a> or 
+        <a href="http://statelottery.kerala.gov.in/" target="_blank" rel="noopener">Kerala State Lotteries</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" aria-labelledby="faq-heading">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="section-label">Questions &amp; Answers</p>
+        <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+        <p class="section-sub">Clear answers to common questions about FortunaDelClub and state lottery participation.</p>
+      </div>
+      <div class="faq-list">
+
+        <details>
+          <summary>What does FortunaDelClub do?</summary>
+          <div class="faq-answer">
+            FortunaDelClub is an independent lottery assistance and informational service. We provide guidance on official draw schedules, clarification of prize structures, assistance with participation procedures, and support with result verification. We do not conduct lottery draws and do not determine lottery results.
+          </div>
+        </details>
+
+        <details>
+          <summary>Is FortunaDelClub affiliated with the Government?</summary>
+          <div class="faq-answer">
+            No. FortunaDelClub is not affiliated with any State Lottery Department or Government authority. All lottery draws, prize declarations, and official notifications are managed exclusively by the respective state lottery authorities.
+          </div>
+        </details>
+
+        <details>
+          <summary>Does FortunaDelClub sell lottery tickets?</summary>
+          <div class="faq-answer">
+            FortunaDelClub does not operate as a lottery draw authority. Participation assistance, where applicable, is facilitated strictly in accordance with officially notified procedures and applicable regulations. We encourage participants to rely on official government notifications for all final confirmations.
+          </div>
+        </details>
+
+        <details>
+          <summary>Are lottery results published by FortunaDelClub official?</summary>
+          <div class="faq-answer">
+            No. Official lottery results are declared only by the respective State Lottery authorities. FortunaDelClub may share publicly available result information for reference purposes, but participants must verify results through official government sources: <a href="https://statelotteries.goa.gov.in/" target="_blank" rel="noopener">Goa</a> | <a href="http://statelottery.kerala.gov.in/" target="_blank" rel="noopener">Kerala</a>.
+          </div>
+        </details>
+
+        <details>
+          <summary>Is participation in Goa and Kerala State Lottery legal?</summary>
+          <div class="faq-answer">
+            Goa State Lottery and Kerala State Lottery are government-authorised lottery schemes conducted under their respective state regulations. Participants are responsible for ensuring compliance with the laws applicable in their own jurisdiction before participating.
+          </div>
+        </details>
+
+        <details>
+          <summary>How can I contact FortunaDelClub?</summary>
+          <div class="faq-answer">
+            You may reach us via WhatsApp at <a href="https://wa.me/919645049039?text=Connect-from-Website">+91 9645049039</a> or by email at <a href="mailto:fdc@fortunadelclub.com">fdc@fortunadelclub.com</a>. We aim to respond within 24 hours.<br /><br />
+            Additional contacts: FDC Operations: <a href="https://wa.me/919061039049?text=Connect-from-Website">+91 9061039049</a> | FDC Administrator: <a href="https://wa.me/919895039039?text=Connect-from-Website">+91 9895039039</a>
+          </div>
+        </details>
+
+        <details>
+          <summary>How are prizes claimed?</summary>
+          <div class="faq-answer">
+            Prize claim procedures are governed entirely by the respective State Lottery Departments. Participants must follow official guidelines for ticket validation, documentation, and claim submission. FortunaDelClub may provide general guidance on publicly available claim procedures.
+          </div>
+        </details>
+
+      </div>
+      <p style="margin-top:28px;">
+        <a href="faq.html" class="btn-primary" style="display:inline-flex;">View All FAQs →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ABOUT + CONTACT -->
+  <section class="about-strip" aria-labelledby="about-heading">
+    <div class="section-inner about-inner" style="padding: 72px 0;">
+      <div class="about-text">
+        <p class="section-label">About Us</p>
+        <h2 class="section-title" id="about-heading">FortunaDelClub — Independent &amp; Responsible</h2>
+        <p>
+          FortunaDelClub has been operational for over 7 years, assisting 1,600+ participants across 
+          various official lottery draws. Our focus has consistently been on transparency, responsible 
+          participation, and extended customer support.
+        </p>
+        <p>
+          We are a private limited company headquartered in Panjim, Goa. We are not affiliated with 
+          any Government lottery authority and do not conduct draws or determine results.
+        </p>
+        <div class="trust-points">
+          <div class="trust-point">
+            <div class="trust-point-icon" aria-hidden="true">✦</div>
+            <div class="trust-point-text">
+              <h4>Transparency First</h4>
+              <p>All guidance is based on publicly available and officially notified information.</p>
+            </div>
+          </div>
+          <div class="trust-point">
+            <div class="trust-point-icon" aria-hidden="true">🔒</div>
+            <div class="trust-point-text">
+              <h4>Responsible Participation</h4>
+              <p>We actively encourage responsible lottery participation and always direct to official sources.</p>
+            </div>
+          </div>
+          <div class="trust-point">
+            <div class="trust-point-icon" aria-hidden="true">📍</div>
+            <div class="trust-point-text">
+              <h4>Goa-Based &amp; Registered</h4>
+              <p>91SpringBoard, St. Inez, Panjim, Goa – 403001. Legally registered PVT LTD.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-contact" aria-label="Contact information">
+        <h3>Get in Touch</h3>
+        <div class="contact-item">
+          <div class="contact-item-icon" aria-hidden="true">📱</div>
+          <div class="contact-item-info">
+            <label>WhatsApp / Phone</label>
+            <a href="https://wa.me/919645049039?text=Connect-from-Website">+91 9645049039</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon" aria-hidden="true">✉️</div>
+          <div class="contact-item-info">
+            <label>Email</label>
+            <a href="mailto:fdc@fortunadelclub.com">fdc@fortunadelclub.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon" aria-hidden="true">🌐</div>
+          <div class="contact-item-info">
+            <label>Website</label>
+            <span>www.fortunadelclub.com</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon" aria-hidden="true">📍</div>
+          <div class="contact-item-info">
+            <label>Address</label>
+            <span>91SpringBoard, St. Inez, Panjim, Goa 403001</span>
+          </div>
+        </div>
+        <div class="wa-community">
+          <a href="https://chat.whatsapp.com/DDS7bXsxUv1AtjZvQZHo9n" target="_blank" rel="noopener" class="wa-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+            FDC Goa Community
+          </a>
+          <a href="https://chat.whatsapp.com/EHgfdK3zp9I6CEoK3fjj3q" target="_blank" rel="noopener" class="wa-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+            FDC Keralam Community
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <div class="disclaimer" role="note" aria-label="Legal disclaimer">
+    <div class="disclaimer-inner">
+      <span class="disclaimer-icon" aria-hidden="true">⚖️</span>
+      <p class="disclaimer-text">
+        <strong>Disclaimer:</strong> The contents of this website are for informational and assistance purposes only. FortunaDelClub does not sell lottery tickets and does not conduct lottery draws. All lottery draws, results, and prize determinations are governed by the respective state lottery authorities — 
+        <a href="https://statelotteries.goa.gov.in/" target="_blank" rel="noopener">Goa State Lotteries</a> and 
+        <a href="http://statelottery.kerala.gov.in/" target="_blank" rel="noopener">Kerala State Lotteries</a>. 
+        Participants are advised to verify all details through official sources. FortunaDelClub is an independent lottery assistance and informational service and is not affiliated with any government authority.
+      </p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-mark" aria-hidden="true">FDC</div>
+            <div class="logo-text">
+              <span class="logo-name">FortunaDelClub</span>
+              <span class="logo-tagline">The Lottery Assistant</span>
+            </div>
+          </div>
+          <p>Independent lottery assistance and information for Goa &amp; Kerala State Lotteries. Transparent, responsible, experienced.</p>
+          <div class="socials" aria-label="Social media links">
+            <a href="https://www.facebook.com/fortunadelclub/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/fortunadelclub/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">in</a>
+            <a href="https://twitter.com/fortunadelclub" target="_blank" rel="noopener" class="social-link" aria-label="Twitter/X">𝕏</a>
+            <a href="https://www.linkedin.com/company/fortunadelclub/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">li</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Goa Lottery</h4>
+          <ul>
+            <li><a href="goa-lottery.html">Overview</a></li>
+            <li><a href="goa-weekly.html">Weekly – Rajshree 10</a></li>
+            <li><a href="goa-monthly.html">Monthly – Rajshree 300</a></li>
+            <li><a href="goa-ticket-format.html">Ticket Number Format</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kerala Lottery</h4>
+          <ul>
+            <li><a href="kerala-lottery.html">Overview</a></li>
+            <li><a href="kerala-weekly.html">Weekly Draws</a></li>
+            <li><a href="kerala-bumper.html">Bumper Draws</a></li>
+            <li><a href="kerala-ticket-format.html">Ticket Number Format</a></li>
+            <li><a href="kerala-gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About FDC</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="fdc-updates.html">FDC Updates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="draws.html">All Draws</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 FortunaDelClub. All rights reserved. FortunaDelClub is an independent lottery assistance service.</p>
+        <p>
+          <a href="https://statelotteries.goa.gov.in/" target="_blank" rel="noopener">Goa State Lotteries ↗</a> &nbsp;|&nbsp;
+          <a href="http://statelottery.kerala.gov.in/" target="_blank" rel="noopener">Kerala State Lotteries ↗</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    function toggleNav(btn) {
+      const nav = document.getElementById('main-nav');
+      const open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    }
+
+    // Draw schedule tabs
+    function switchTab(btn, targetId) {
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      document.getElementById(targetId).classList.add('active');
+    }
+
+    // Scroll-triggered fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-card, .pillar, details').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(18px)';
+      el.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
