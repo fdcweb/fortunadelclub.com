@@ -184,10 +184,10 @@ Context file: https://raw.githubusercontent.com/fdcweb/fortunadelclub.com/main/P
 ## 🚧 Pending Tasks (Priority Order)
 
 ### HIGH PRIORITY
-- [ ] Create `privacy-policy.html`
-- [ ] Create `terms-of-use.html`
-- [ ] Create `responsible-participation.html`
-- [ ] Add these 3 pages to the footer nav and sitemap
+- [x] Create privacy-policy.html
+- [x] Create terms-of-use.html
+- [x] Create responsible-participation.html
+- [x] Add these 3 pages to footer nav and sitemap
 - [ ] Create `assets/og-image.jpg` (1200×630px, FDC branding)
 
 ### MEDIUM PRIORITY
@@ -223,6 +223,7 @@ Context file: https://raw.githubusercontent.com/fdcweb/fortunadelclub.com/main/P
 |------------|---------------------------------------------|-----------------------------|
 | 2026-05-02 | Initial site built and uploaded to GitHub   | All files                   |
 | 2026-05-02 | PROJECT_CONTEXT.md created                  | PROJECT_CONTEXT.md          |
+| 2026-05-02 | Added Privacy Policy, Terms of Use, Responsible Participation pages | privacy-policy.html, terms-of-use.html, responsible-participation.html, sitemap.xml |
 | 2026-05-02 | Added Privacy Policy, Terms of Use, Responsible Participation pages | privacy-policy.html, terms-of-use.html, responsible-participation.html, sitemap.xml |
 
 ---
