@@ -40,9 +40,9 @@ fortunadelclub.com/          ← repo root = GitHub Pages root
 ├── fdc-updates.html         ✅ Done – Updates / announcements
 ├── 404.html                 ✅ Done – Custom 404 page
 │
-├── privacy-policy.html      ❌ MISSING – Must be created
-├── terms-of-use.html        ❌ MISSING – Must be created
-├── responsible-participation.html ❌ MISSING – Must be created
+├── privacy-policy.html      ✅ Done – Added 2026-05-02
+├── terms-of-use.html        ✅ Done – Added 2026-05-02
+├── responsible-participation.html ✅ Done – Added 2026-05-02
 │
 ├── assets/
 │   ├── style.css            ✅ Done – Shared stylesheet (all pages link here)
@@ -223,6 +223,7 @@ Context file: https://raw.githubusercontent.com/fdcweb/fortunadelclub.com/main/P
 |------------|---------------------------------------------|-----------------------------|
 | 2026-05-02 | Initial site built and uploaded to GitHub   | All files                   |
 | 2026-05-02 | PROJECT_CONTEXT.md created                  | PROJECT_CONTEXT.md          |
+| 2026-05-02 | Added Privacy Policy, Terms of Use, Responsible Participation pages | privacy-policy.html, terms-of-use.html, responsible-participation.html, sitemap.xml |
 
 ---
 
