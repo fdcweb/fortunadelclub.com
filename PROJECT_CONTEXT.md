@@ -1,6 +1,6 @@
 # FortunaDelClub – Project Context File
 # Maintained by: Claude (AI Assistant) + FDC Web Manager
-# Last Updated: 2026-05-05
+# Last Updated: 2026-05-06
 # Repo: https://github.com/fdcweb/fortunadelclub.com
 # Live Site: https://www.fortunadelclub.com
 
@@ -125,6 +125,15 @@ fortunadelclub.com/
 | FAQPage JSON-LD        | ✅ Live  | faq.html only                      |
 | Organization JSON-LD   | ✅ Live  | index.html only                    |
 
+### Shared Include System (Added 2026-05-06)
+To update announcement bar, header, or footer across ALL pages in one command:
+1. Edit the relevant file in `assets/includes/`
+   - `assets/includes/ann-bar.html`  ← announcement bar
+   - `assets/includes/header.html`   ← nav header
+   - `assets/includes/footer.html`   ← footer
+2. Run from repo root: `python3 tools/inject_includes.py`
+3. Commit & push: `git add *.html && git commit -m 'Update shared includes' && git push`
+
 ### ⚠️ Still Pending
 - [ ] Submit sitemap to Google Search Console
       URL: https://www.fortunadelclub.com/sitemap.xml
@@ -169,11 +178,12 @@ Social:
 | Sunday    | Samrudhi       |
 
 ### Kerala Bumper
-| Draw No. | Name                         | Status       |
-|----------|------------------------------|--------------|
-| BR-109   | Vishu Bumper 2026            | Upcoming     |
-| BR-108   | Summer Bumper 2026           | Tickets Open |
-| BR-107   | XMAS New Year Bumper 2025-26 | Concluded    |
+| Draw No. | Name                         | Draw Date   | Status        |
+|----------|------------------------------|-------------|---------------|
+| BR-110   | Monsoon Bumper 2026          | Jul 2026    | Upcoming      |
+| BR-109   | Vishu Bumper 2026            | 23 May 2026 | Tickets Open  |
+| BR-108   | Summer Bumper 2026           | Mar 2026    | Concluded     |
+| BR-107   | XMAS New Year Bumper 2025-26 | Jan 2026    | Concluded     |
 
 ### Goa
 | Draw    | Name          | Time        |
@@ -247,6 +257,11 @@ Standard flow:
 | 2026-05-05 | og:image path standardised to assets/og-image.jpg              | All 19 .html files              |
 | 2026-05-05 | Favicon & OG image files uploaded to assets/                   | assets/ folder                  |
 | 2026-05-05 | PROJECT_CONTEXT.md updated — all medium tasks complete         | PROJECT_CONTEXT.md              |
+| 2026-05-06 | Vishu Bumper (BR-109) set as Tickets Open — draw 23 May 2026   | kerala-bumper.html, fdc-updates.html, draws.html, index.html |
+| 2026-05-06 | Summer Bumper (BR-108) marked Concluded                        | kerala-bumper.html, fdc-updates.html, draws.html, index.html |
+| 2026-05-06 | Monsoon Bumper (BR-110) added as Upcoming (Jul 2026)           | kerala-bumper.html, fdc-updates.html, draws.html             |
+| 2026-05-06 | Announcement bar updated across all 19 pages                   | All *.html                                                    |
+| 2026-05-06 | Shared include system created (ann-bar, header, footer)        | assets/includes/, tools/inject_includes.py                    |
 
 ---
 
