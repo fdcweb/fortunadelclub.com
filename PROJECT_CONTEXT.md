@@ -3,6 +3,8 @@
 # Last Updated: 2026-05-06
 # Repo: https://github.com/fdcweb/fortunadelclub.com
 # Live Site: https://www.fortunadelclub.com
+# Canonical repo root: /home/moplet04/fdc/fortunadelclub.com
+# Cleanup note: duplicate nested folder removed on 2026-05-07
 
 ---
 
