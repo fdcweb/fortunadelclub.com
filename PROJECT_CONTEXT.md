@@ -1,14 +1,47 @@
 # FortunaDelClub – Project Context File
 # Maintained by: Claude (AI Assistant) + FDC Web Manager
-# Last Updated: 2026-05-06
+# Last Updated: 2026-05-07
 # Repo: https://github.com/fdcweb/fortunadelclub.com
 # Live Site: https://www.fortunadelclub.com
 # Canonical repo root: /home/moplet04/fdc/fortunadelclub.com
-# Cleanup note: duplicate nested folder removed on 2026-05-07
+# Git Commits: 37aebdf → bc8bd32
+
+---
+
+## � Recent Changes & Roadmap
+
+### ✅ Completed (2026-05-07)
+- **Site-wide standardization begun:** Created standardized terminology guidelines and compliance-safe language standards
+- **Disclaimer infrastructure:** Built centralized disclaimer component at `assets/includes/disclaimer.html` with responsive styling
+- **Page migrations:** Migrated index.html, goa-lottery.html, and kerala-lottery.html to new standardized disclaimer format
+- **CSS updated:** Added `.disclaimer`, `.disclaimer-grid`, `.disclaimer-item`, `.disclaimer-footer` classes with full responsiveness
+- **PROJECT_CONTEXT.md enhanced:** Added Site-Wide Terminology & Positioning Standards + standardized disclaimer usage guide
+
+### 📋 In Progress (Next Steps)
+- [ ] Migrate remaining interior pages to standardized disclaimer (goa-weekly, goa-monthly, kerala-weekly, kerala-bumper, etc.)
+- [ ] Audit all pages for terminology compliance (replace risky terms with safe alternatives)
+- [ ] Verify Organization JSON-LD schema on index.html
+- [ ] Verify FAQPage JSON-LD schema on faq.html
+- [ ] Ensure BreadcrumbList JSON-LD on all interior pages
+- [ ] Add internal linking to responsible-participation.html and terms-of-use.html where appropriate
+
+### 🎯 Future Enhancements
+- [ ] Integrate disclaimer into `inject_includes.py` for automated injection
+- [ ] Add SEO/accessibility audit report
+- [ ] Optimize page load performance
+- [ ] Create language alternates (Hindi, Malayalam) guidelines
+
+### Git History
+| Commit | Message | Date |
+|--------|---------|------|
+| b0918ea | Remove duplicate nested copy | 2026-05-07 |
+| 37aebdf | Add standardized transparency & disclaimer section | 2026-05-07 |
+| bc8bd32 | Migrate index, goa-lottery, and kerala-lottery | 2026-05-07 |
 
 ---
 
 ## 🔰 Core Positioning (NEVER DEVIATE)
+
 
 FortunaDelClub is an **independent lottery assistance and informational service**.
 
