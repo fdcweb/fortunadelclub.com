@@ -11,25 +11,32 @@
 ## � Recent Changes & Roadmap
 
 ### ✅ Completed (2026-05-07)
-- **Site-wide standardization begun:** Created standardized terminology guidelines and compliance-safe language standards
-- **Disclaimer infrastructure:** Built centralized disclaimer component at `assets/includes/disclaimer.html` with responsive styling
-- **Page migrations:** Migrated index.html, goa-lottery.html, and kerala-lottery.html to new standardized disclaimer format
-- **CSS updated:** Added `.disclaimer`, `.disclaimer-grid`, `.disclaimer-item`, `.disclaimer-footer` classes with full responsiveness
-- **PROJECT_CONTEXT.md enhanced:** Added Site-Wide Terminology & Positioning Standards + standardized disclaimer usage guide
+- **Phase 1: Disclaimer infrastructure** ✅
+  - Created standardized terminology guidelines and compliance-safe language standards
+  - Built centralized disclaimer component at `assets/includes/disclaimer.html` with responsive styling
+  - Added `.disclaimer`, `.disclaimer-grid`, `.disclaimer-item`, `.disclaimer-footer` CSS classes with full responsiveness
+  - Enhanced `PROJECT_CONTEXT.md` with Site-Wide Terminology & Positioning Standards
 
-### 📋 In Progress (Next Steps)
-- [ ] Migrate remaining interior pages to standardized disclaimer (goa-weekly, goa-monthly, kerala-weekly, kerala-bumper, etc.)
-- [ ] Audit all pages for terminology compliance (replace risky terms with safe alternatives)
-- [ ] Verify Organization JSON-LD schema on index.html
-- [ ] Verify FAQPage JSON-LD schema on faq.html
+- **Phase 2: Full page migration complete** ✅
+  - Migrated all remaining pages to the standardized disclaimer structure
+  - Pages completed: `goa-weekly.html`, `goa-monthly.html`, `goa-ticket-format.html`, `kerala-weekly.html`, `kerala-bumper.html`, `kerala-ticket-format.html`, `kerala-gallery.html`, `draws.html`, `faq.html`, `about.html`, `contact.html`, `fdc-updates.html`, `privacy-policy.html`, `terms-of-use.html`, `responsible-participation.html`
+
+### 📋 Next Steps
+- [ ] Audit all pages for terminology compliance and remove any remaining risky wording
+- [ ] Verify Organization JSON-LD schema on `index.html`
+- [ ] Verify FAQPage JSON-LD schema on `faq.html`
 - [ ] Ensure BreadcrumbList JSON-LD on all interior pages
-- [ ] Add internal linking to responsible-participation.html and terms-of-use.html where appropriate
-
-### 🎯 Future Enhancements
-- [ ] Integrate disclaimer into `inject_includes.py` for automated injection
+- [ ] Add internal linking to `responsible-participation.html` and `terms-of-use.html` where appropriate
+- [ ] Integrate disclaimer into `inject_includes.py` for automated future injection
 - [ ] Add SEO/accessibility audit report
 - [ ] Optimize page load performance
-- [ ] Create language alternates (Hindi, Malayalam) guidelines
+- [ ] Create language alternates guideline (Hindi, Malayalam)
+
+### 🎯 Future Enhancements
+- [ ] Build an automated page audit script for compliance-safe terminology
+- [ ] Standardize metadata across all HTML pages
+- [ ] Add a visual QA checklist for mobile and desktop rendering
+- [ ] Prepare a content governance plan for future updates
 
 ### Git History
 | Commit | Message | Date |
@@ -37,6 +44,7 @@
 | b0918ea | Remove duplicate nested copy | 2026-05-07 |
 | 37aebdf | Add standardized transparency & disclaimer section | 2026-05-07 |
 | bc8bd32 | Migrate index, goa-lottery, and kerala-lottery | 2026-05-07 |
+| 95c5297 | Migrate all remaining pages to standardized disclaimer section — site-wide complete | 2026-05-07 |
 
 ---
 
@@ -156,7 +164,7 @@ A pre-built disclaimer include is now available for all pages:
 </section>
 
 <!-- Standardized Transparency & Disclaimer Section -->
-{%- include 'assets/includes/disclaimer.html' -%}
+{% raw %}{% include 'assets/includes/disclaimer.html' %}{% endraw %}
 
 </main>
 ```
