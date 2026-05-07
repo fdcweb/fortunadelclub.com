@@ -603,22 +603,6 @@
     .wa-btn:hover { opacity: 0.85; color: #fff; }
 
     /* ===========================
-       DISCLAIMER
-    =========================== */
-    .disclaimer {
-      background: #F5EFE3;
-      border-top: 1px solid var(--border);
-      padding: 28px 24px;
-    }
-    .disclaimer-inner {
-      max-width: var(--max-w); margin: 0 auto;
-      display: flex; gap: 14px; align-items: flex-start;
-    }
-    .disclaimer-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 2px; }
-    .disclaimer-text { font-size: 0.83rem; color: var(--muted); line-height: 1.7; }
-    .disclaimer-text a { color: var(--gold); }
-
-    /* ===========================
        FOOTER
     =========================== */
     footer {
@@ -1080,18 +1064,38 @@
     </div>
   </section>
 
-  <!-- DISCLAIMER -->
-  <div class="disclaimer" role="note" aria-label="Legal disclaimer">
-    <div class="disclaimer-inner">
-      <span class="disclaimer-icon" aria-hidden="true">⚖️</span>
-      <p class="disclaimer-text">
-        <strong>Disclaimer:</strong> The contents of this website are for informational and assistance purposes only. FortunaDelClub does not sell lottery tickets and does not conduct lottery draws. All lottery draws, results, and prize determinations are governed by the respective state lottery authorities — 
-        <a href="https://statelotteries.goa.gov.in/" target="_blank" rel="noopener">Goa State Lotteries</a> and 
-        <a href="http://statelottery.kerala.gov.in/" target="_blank" rel="noopener">Kerala State Lotteries</a>. 
-        Participants are advised to verify all details through official sources. FortunaDelClub is an independent lottery assistance and informational service and is not affiliated with any government authority.
-      </p>
+  <!-- Standardized Transparency & Disclaimer Section -->
+  <section class="disclaimer" aria-labelledby="disc-heading">
+    <div class="section-inner">
+      <h2 id="disc-heading">Transparency & Disclaimer</h2>
+      <p><strong>FortunaDelClub</strong> is an independent lottery assistance and informational service. We provide guidance on official draw schedules, prize structures, participation procedures, and result verification for Goa and Kerala State Lotteries.</p>
+      
+      <div class="disclaimer-grid">
+        <div class="disclaimer-item">
+          <h3>What We Are Not</h3>
+          <ul>
+            <li>Not a government authority or official lottery operator</li>
+            <li>Not affiliated with Goa State Lotteries or Kerala State Lotteries</li>
+            <li>Not a ticket seller or procurement agent</li>
+            <li>Not involved in conducting lottery draws</li>
+            <li>Do not guarantee winnings or predict results</li>
+          </ul>
+        </div>
+        <div class="disclaimer-item">
+          <h3>Official Information</h3>
+          <ul>
+            <li>All lottery draws are conducted exclusively by government authorities</li>
+            <li>Prize declarations and results are official government announcements</li>
+            <li>Draw schedules may change based on official notifications</li>
+            <li>Participants are responsible for verifying all details through official channels</li>
+            <li>Visit <a href="https://statelotteries.goa.gov.in/" target="_blank" rel="noopener">Goa</a> or <a href="http://statelottery.kerala.gov.in/" target="_blank" rel="noopener">Kerala</a> official sites</li>
+          </ul>
+        </div>
+      </div>
+      
+      <p class="disclaimer-footer">Participants should ensure compliance with the laws applicable in their own jurisdiction. FortunaDelClub operates transparently and welcomes verification of our information against official sources.</p>
     </div>
-  </div>
+  </section>
 
   <!-- FOOTER -->
   <footer role="contentinfo">
