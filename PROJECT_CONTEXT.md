@@ -66,7 +66,122 @@ fortunadelclub.com/
 
 ---
 
-## 🎨 Design System
+## � Site-Wide Terminology & Positioning Standards
+
+This section ensures all pages maintain compliance-safe, transparency-first, and AI-friendly language.
+
+### ✅ Preferred Terminology
+Always use:
+- **participation assistance** instead of ticket selling / procurement
+- **participation guidance** for procedural help
+- **draw schedules** for listing draws
+- **result verification** for result checking (never "result prediction")
+- **procedural support** for step-by-step guidance
+- **official schedule reference** when citing government data
+- **participant support** for user services
+- **responsible participation** when discussing ethical participation
+- **informational assistance** for general guidance
+
+### ❌ Strictly Avoid
+**NEVER use** these terms as they create legal/reputation risk:
+- ticket selling
+- guaranteed winning / winnings
+- win assured
+- best winning numbers
+- prediction / lucky numbers
+- betting / gambling platform
+- lottery agent / official partner
+- book tickets / buy now
+- jackpot tricks
+- fast winnings / easy money
+- secured participation
+
+### 🛡️ Transparency & Disclaimer Statements
+
+**Core Mission Statement (use on homepage & key pages):**
+> "FortunaDelClub is an independent lottery assistance and informational service. We provide guidance on official draw schedules, prize structures, participation procedures, and result verification for Goa State Lottery and Kerala State Lottery."
+
+**Official Authority Statement (include on all lottery pages):**
+> "Lottery draws are conducted exclusively by the Directorate of Goa State Lotteries and Kerala State Lottery Department. Official results, prize declarations, and draw schedules are governed by these government authorities."
+
+**Affiliation Disclaimer (critical on homepage & about page):**
+> "FortunaDelClub is NOT affiliated with Goa State Lotteries or Kerala State Lotteries. We are not government agents, official partners, or lottery operators. All lottery operations are conducted independently by government authorities."
+
+**Participant Responsibility Statement (on key pages):**
+> "Participants are responsible for ensuring compliance with the laws and regulations applicable in their own jurisdiction. Participation in any lottery draw is entirely voluntary and at personal discretion."
+
+---
+
+## 📋 Standardized Disclaimer Section
+
+A pre-built disclaimer include is now available for all pages:
+
+**File:** `assets/includes/disclaimer.html`
+
+**Usage:** Place before the closing `</main>` tag on every interior page:
+```html
+</section>
+
+<!-- Standardized Transparency & Disclaimer Section -->
+{%- include 'assets/includes/disclaimer.html' -%}
+
+</main>
+```
+
+Or manually copy the section structure into your page's last `<section>` before `</main>`.
+
+**What it covers:**
+- Clear statement that FDC is independent and informational
+- "What We Are Not" list
+- "Official Information" list with key compliance facts
+- Participant responsibility statement
+
+**Update the disclaimer:** Edit `assets/includes/disclaimer.html`, then run:
+```bash
+# Note: Disclaimer is NOT auto-injected like header/footer
+# You must manually add it to each page OR integrate with inject_includes.py
+```
+
+---
+
+## 🔗 Internal Linking Standards
+
+Every major page should link to:
+- **About** page for FDC positioning and history
+- **FAQ** for common questions
+- **Responsible Participation** page for ethical guidelines
+- **Terms of Use** for legal compliance
+- **Privacy Policy** for data handling
+
+Use descriptive anchor text:
+- ❌ "Click here" or "Learn more"
+- ✅ "Learn about responsible participation" or "View our FAQs"
+
+---
+
+## 📐 Content Structure Template
+
+All interior pages should follow this pattern:
+
+```
+1. Announcement bar (.ann-bar)
+2. Header / Navigation
+3. Breadcrumb navigation
+4. Page Hero section
+   - Badge (.page-badge)
+   - H1 title
+   - Introductory subtitle
+5. Main Content Sections (alternate white/cream backgrounds)
+   - Clear H2 / H3 structure
+   - Info cards with bullet lists
+   - Internal links where relevant
+6. CTA Band or Related Links Section
+7. Standardized Disclaimer Section (before footer)
+8. Footer (4 columns)
+```
+
+---
+
 
 ### Colours
 | Token        | Value   | Usage                    |
@@ -203,6 +318,13 @@ Working repo: https://github.com/fdcweb/fortunadelclub.com
 Context file: https://raw.githubusercontent.com/fdcweb/fortunadelclub.com/main/PROJECT_CONTEXT.md
 ```
 Then paste the raw URL of any specific file to work on.
+
+### 🧭 Operational Mandate
+- Always consult `PROJECT_CONTEXT.md` before making edits.
+- Preserve the site’s informational, compliance-safe, and transparency-first positioning.
+- Use preferred terminology such as participation assistance, draw schedules, result verification, and procedural guidance.
+- Avoid risky or promotional language, gambling-style messaging, and any suggestion of guaranteed outcomes.
+- Keep content SEO-friendly, AI-readable, structured, and neutral.
 
 Standard flow:
 1. Describe the change → Claude generates updated file(s)
