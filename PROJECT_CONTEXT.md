@@ -25,6 +25,7 @@
   - Completed site-wide terminology compliance review and SEO/accessibility audit
   - Added `404.html` SEO metadata (`meta description`, `canonical`)
   - Added explicit internal policy links on key pages
+  - Updated page headings and FAQ copy for Goa/Kerala lottery assistance SEO targeting
   - Updated `tools/inject_includes.py` to support shared disclaimer injection
   - Logged this change in `PROJECT_CONTEXT.md` for future reference
 
