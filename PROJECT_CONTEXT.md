@@ -1,10 +1,10 @@
 # FortunaDelClub – Project Context File
 # Maintained by: Claude (AI Assistant) + FDC Web Manager
-# Last Updated: 2026-05-07
+# Last Updated: 2026-05-18
 # Repo: https://github.com/fdcweb/fortunadelclub.com
 # Live Site: https://www.fortunadelclub.com
 # Canonical repo root: /home/moplet04/fdc/fortunadelclub.com
-# Git Commits: 37aebdf → bc8bd32
+# Git Commits: 37aebdf → 4a84fe3
 
 ---
 
@@ -20,6 +20,13 @@
 - **Phase 2: Full page migration complete** ✅
   - Migrated all remaining pages to the standardized disclaimer structure
   - Pages completed: `goa-weekly.html`, `goa-monthly.html`, `goa-ticket-format.html`, `kerala-weekly.html`, `kerala-bumper.html`, `kerala-ticket-format.html`, `kerala-gallery.html`, `draws.html`, `faq.html`, `about.html`, `contact.html`, `fdc-updates.html`, `privacy-policy.html`, `terms-of-use.html`, `responsible-participation.html`
+
+- **Phase 3: SEO & audit polish** ✅
+  - Completed site-wide terminology compliance review and SEO/accessibility audit
+  - Added `404.html` SEO metadata (`meta description`, `canonical`)
+  - Added explicit internal policy links on key pages
+  - Updated `tools/inject_includes.py` to support shared disclaimer injection
+  - Logged this change in `PROJECT_CONTEXT.md` for future reference
 
 ### 📋 Next Steps
 - [ ] Audit all pages for terminology compliance and remove any remaining risky wording
@@ -220,6 +227,25 @@ All interior pages should follow this pattern:
 7. Standardized Disclaimer Section (before footer)
 8. Footer (4 columns)
 ```
+
+## 🧠 SEO & LLM Optimization Strategy
+
+- Target important search themes in page titles and descriptions:
+  - "Goa lottery assistance"
+  - "Kerala lottery assistance"
+  - "Rajshree 10 weekly draw"
+  - "Rajshree 300 monthly draw"
+  - "Kerala bumper lottery"
+  - "lottery result verification"
+  - "responsible lottery participation"
+- Keep page copy factual and compliance-safe while matching user intent for those keywords.
+- Keep structured data active and accurate:
+  - `Organization` on `index.html`
+  - `FAQPage` on `faq.html`
+  - `BreadcrumbList` on interior pages
+- Use keyword-rich but natural section headings and descriptive internal anchor text.
+- Maintain the `llms.txt` file as a concise knowledge source for AI/LLM references.
+- Log every future site-level change in `PROJECT_CONTEXT.md` so the audit trail is preserved.
 
 ---
 
