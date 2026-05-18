@@ -29,6 +29,7 @@ def load_include(name):
 ANN  = load_include("ann-bar.html")
 HEAD = load_include("header.html")
 FOOT = load_include("footer.html")
+DISCLAIMER = load_include("disclaimer.html")
 
 updated = []
 for fname in sorted(os.listdir(ROOT)):
@@ -53,6 +54,17 @@ for fname in sorted(os.listdir(ROOT)):
         r'<footer\b[^>]*>.*?</footer>',
         FOOT, html, count=1, flags=re.DOTALL
     )
+    # Replace existing standardized disclaimer section or inject it before </main>
+    if "<!-- Standardized Transparency & Disclaimer Section -->" in html:
+        html = re.sub(
+            r'<!-- Standardized Transparency & Disclaimer Section -->.*?</section>',
+            DISCLAIMER,
+            html,
+            count=1,
+            flags=re.DOTALL
+        )
+    elif "</main>" in html:
+        html = re.sub(r'</main>', f'{DISCLAIMER}\n\n</main>', html, count=1)
 
     if html != original:
         with open(path, "w") as f: f.write(html)
@@ -62,5 +74,5 @@ for fname in sorted(os.listdir(ROOT)):
 print(f"\nDone. {len(updated)} files updated.")
 print("\nNext steps:")
 print("  git add *.html")
-print("  git commit -m \'Update shared header/footer/ann-bar\'")
+print("  git commit -m 'Update shared header/footer/ann-bar/disclaimer'")
 print("  git push origin main")
