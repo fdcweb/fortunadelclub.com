@@ -474,6 +474,7 @@ Standard flow:
 | 2026-05-06 | Announcement bar updated across all 19 pages                   | All *.html                                                    |
 | 2026-05-06 | Converted to JS fetch-based shared includes — header, footer, ann-bar now single-source in assets/includes/ | assets/includes/, assets/main.js, assets/style.css, all 19 *.html |
 | 2026-05-25 | Logo incorporated — logo.png now displays in header and footer across all pages | assets/includes/header.html, assets/includes/footer.html, assets/style.css |
+| 2026-05-25 | Logo placement & sizing optimized — fixed relative paths and improved alignment | assets/includes/header.html, assets/includes/footer.html, assets/style.css |
 
 ---
 
