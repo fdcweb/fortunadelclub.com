@@ -38,6 +38,7 @@ header { background: var(--deep); position: sticky; top: 0; z-index: 100; box-sh
 .nav-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 68px; }
 .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .logo-mark { width: 42px; height: 42px; background: var(--gold); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-family: var(--font-head); font-size: 1.1rem; font-weight: 700; color: var(--deep); flex-shrink: 0; }
+.logo-image { width: 42px; height: 42px; object-fit: contain; flex-shrink: 0; }
 .logo-name  { font-family: var(--font-head); font-size: 1.1rem; color: var(--gold-light); font-weight: 700; display: block; }
 .logo-tag   { font-size: .7rem; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; display: block; }
 
@@ -208,3 +209,6 @@ footer { background: var(--deep); padding: 52px 24px 28px; color: #8A7A60; }
   .footer-top { grid-template-columns: 1fr; gap: 28px; }
   .footer-bottom { flex-direction: column; text-align: center; }
 }
+
+/* Shared include placeholders — hidden until JS replaces them */
+#fdc-ann-bar, #fdc-header, #fdc-footer { display: none; }

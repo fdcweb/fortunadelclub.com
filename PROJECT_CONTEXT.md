@@ -45,13 +45,17 @@ fortunadelclub.com/
 │
 ├── assets/
 │   ├── style.css                  ✅ Done
-│   ├── main.js                    ✅ Done
+│   ├── main.js                    ✅ Done – includes loader + shared JS
 │   ├── favicon.ico                ✅ Done – uploaded 2026-05-05
 │   ├── favicon-16.png             ✅ Done – uploaded 2026-05-05
 │   ├── favicon-32.png             ✅ Done – uploaded 2026-05-05
 │   ├── apple-touch-icon.png       ✅ Done – uploaded 2026-05-05
 │   ├── og-image.jpg               ✅ Done – uploaded 2026-05-05
-│   └── og-image-gold.jpg          ✅ Done – uploaded 2026-05-05
+│   ├── og-image-gold.jpg          ✅ Done – uploaded 2026-05-05
+│   └── includes/
+│       ├── ann-bar.html           ✅ SINGLE SOURCE – edit to update ann bar on all pages
+│       ├── header.html            ✅ SINGLE SOURCE – edit to update nav on all pages
+│       └── footer.html            ✅ SINGLE SOURCE – edit to update footer on all pages
 │
 ├── sitemap.xml                    ✅ Done – includes all 19 pages
 ├── robots.txt                     ✅ Done
@@ -125,14 +129,29 @@ fortunadelclub.com/
 | FAQPage JSON-LD        | ✅ Live  | faq.html only                      |
 | Organization JSON-LD   | ✅ Live  | index.html only                    |
 
-### Shared Include System (Added 2026-05-06)
-To update announcement bar, header, or footer across ALL pages in one command:
+### Shared Include System (JS Fetch-Based, Added 2026-05-06)
+
+These 3 files are the SINGLE SOURCE OF TRUTH for shared elements.  
+All 19 pages load them at runtime via JavaScript fetch — no build step needed.
+
+| To change          | Edit this file                    | Then do          |
+|--------------------|-----------------------------------|------------------|
+| Announcement bar   | assets/includes/ann-bar.html      | git push only    |
+| Navigation header  | assets/includes/header.html       | git push only    |
+| Footer             | assets/includes/footer.html       | git push only    |
+
+**Workflow:**
 1. Edit the relevant file in `assets/includes/`
-   - `assets/includes/ann-bar.html`  ← announcement bar
-   - `assets/includes/header.html`   ← nav header
-   - `assets/includes/footer.html`   ← footer
-2. Run from repo root: `python3 tools/inject_includes.py`
-3. Commit & push: `git add *.html && git commit -m 'Update shared includes' && git push`
+2. `git add assets/includes/<filename>`
+3. `git commit -m "Update <element>"`
+4. `git push origin main`
+5. Done — all 19 pages update automatically. No HTML files need touching.
+
+**How it works:**
+- Every HTML page has `<div id="fdc-ann-bar"></div>`, `<div id="fdc-header"></div>`, `<div id="fdc-footer"></div>` as placeholders
+- `assets/main.js` fetches the 3 fragment files and replaces the placeholders
+- Active nav link is set automatically based on the current page URL
+- CSS hides placeholders until loaded (no flash of unstyled content)
 
 ### ⚠️ Still Pending
 - [ ] Submit sitemap to Google Search Console
@@ -261,7 +280,8 @@ Standard flow:
 | 2026-05-06 | Summer Bumper (BR-108) marked Concluded                        | kerala-bumper.html, fdc-updates.html, draws.html, index.html |
 | 2026-05-06 | Monsoon Bumper (BR-110) added as Upcoming (Jul 2026)           | kerala-bumper.html, fdc-updates.html, draws.html             |
 | 2026-05-06 | Announcement bar updated across all 19 pages                   | All *.html                                                    |
-| 2026-05-06 | Shared include system created (ann-bar, header, footer)        | assets/includes/, tools/inject_includes.py                    |
+| 2026-05-06 | Converted to JS fetch-based shared includes — header, footer, ann-bar now single-source in assets/includes/ | assets/includes/, assets/main.js, assets/style.css, all 19 *.html |
+| 2026-05-25 | Logo incorporated — logo.png now displays in header and footer across all pages | assets/includes/header.html, assets/includes/footer.html, assets/style.css |
 
 ---
 
