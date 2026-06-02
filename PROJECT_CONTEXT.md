@@ -4,7 +4,7 @@
 # Repo: https://github.com/fdcweb/fortunadelclub.com
 # Live Site: https://www.fortunadelclub.com
 # Canonical repo root: /home/moplet04/fdc/fortunadelclub.com
-# Git Commits: 37aebdf → c46ba2a
+# Git Commits: 37aebdf → 4258efe
 
 ---
 
@@ -476,6 +476,7 @@ Standard flow:
 | 2026-05-25 | Logo incorporated — logo.png now displays in header and footer across all pages | assets/includes/header.html, assets/includes/footer.html, assets/style.css |
 | 2026-05-25 | Logo placement & sizing optimized — fixed relative paths and improved alignment | assets/includes/header.html, assets/includes/footer.html, assets/style.css |
 | 2026-06-02 | **Logo display debugging & resolution** — Root cause identified: logo.png was 2519×2611px (331KB), oversized source causing render issues. Resized to 96×100px (7.3KB). Applied inline styles for 42px constraint, added cache-busting to fetch calls. | assets/logo.png (resized), assets/includes/header.html, assets/includes/footer.html, assets/style.css, assets/main.js |
+| 2026-06-02 | **Color scheme redesign - Coastal Elegant theme** — Transitioned from dark luxury (brown/gold) to modern light elegance: Primary teal (#006B8F), warm taupe accents (#D4A574), light backgrounds (#F8F9FA). Updated 20+ CSS color properties, header to white, footer to dark teal gradient, improved contrast ratios for accessibility. | assets/style.css |
 
 ---
 
