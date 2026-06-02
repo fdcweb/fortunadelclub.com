@@ -21,7 +21,7 @@
   function load(id, file, callback) {
     const el = document.getElementById(id);
     if (!el) return;
-    fetch(base + file)
+    fetch(base + file + '?v=' + Math.random())
       .then(r => r.ok ? r.text() : Promise.reject(r.status))
       .then(html => {
         el.outerHTML = html;
