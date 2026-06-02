@@ -102,7 +102,6 @@ fortunadelclub.com/
 │   ├── favicon-32.png             ✅ Done – uploaded 2026-05-05
 │   ├── apple-touch-icon.png       ✅ Done – uploaded 2026-05-05
 │   ├── og-image.jpg               ✅ Done – uploaded 2026-05-05
-│   ├── og-image-gold.jpg          ✅ Done – uploaded 2026-05-05
 │   └── includes/
 │       ├── ann-bar.html           ✅ SINGLE SOURCE – edit to update ann bar on all pages
 │       ├── header.html            ✅ SINGLE SOURCE – edit to update nav on all pages
@@ -478,6 +477,7 @@ Standard flow:
 | 2026-06-02 | **Logo display debugging & resolution** — Root cause identified: logo.png was 2519×2611px (331KB), oversized source causing render issues. Resized to 96×100px (7.3KB). Applied inline styles for 42px constraint, added cache-busting to fetch calls. | assets/logo.png (resized), assets/includes/header.html, assets/includes/footer.html, assets/style.css, assets/main.js |
 | 2026-06-02 | **Color scheme redesign - Coastal Elegant theme** — Transitioned from dark luxury (brown/gold) to modern light elegance: Primary teal (#006B8F), warm taupe accents (#D4A574), light backgrounds (#F8F9FA). Updated 20+ CSS color properties, header to white, footer to dark teal gradient, improved contrast ratios for accessibility. | assets/style.css |
 | 2026-06-02 | **Home page (index.html) theme sync & text readability** — Updated home page inline CSS color variables to match Coastal Elegant theme. Darkened body text from #2D2D2D to #1A1A1A for improved readability on light backgrounds. Updated header to white, nav to teal, buttons to dark teal with taupe hover. | index.html, assets/style.css |
+| 2026-06-02 | **Assets cleanup** — Removed og-image-gold.jpg (unused legacy file from old dark theme). Retained: apple-touch-icon.png, favicon icons, logo.png (42×42px), main.js, style.css, og-image.jpg. | assets/ |
 
 ---
 
