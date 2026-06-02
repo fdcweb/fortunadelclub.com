@@ -478,6 +478,7 @@ Standard flow:
 | 2026-06-02 | **Color scheme redesign - Coastal Elegant theme** — Transitioned from dark luxury (brown/gold) to modern light elegance: Primary teal (#006B8F), warm taupe accents (#D4A574), light backgrounds (#F8F9FA). Updated 20+ CSS color properties, header to white, footer to dark teal gradient, improved contrast ratios for accessibility. | assets/style.css |
 | 2026-06-02 | **Home page (index.html) theme sync & text readability** — Updated home page inline CSS color variables to match Coastal Elegant theme. Darkened body text from #2D2D2D to #1A1A1A for improved readability on light backgrounds. Updated header to white, nav to teal, buttons to dark teal with taupe hover. | index.html, assets/style.css |
 | 2026-06-02 | **Assets cleanup** — Removed og-image-gold.jpg (unused legacy file from old dark theme). Retained: apple-touch-icon.png, favicon icons, logo.png (42×42px), main.js, style.css, og-image.jpg. | assets/ |
+| 2026-06-02 | **Home page announcement bar styling fix** — Corrected home page to use `.ann-bar` class (matching other pages) instead of separate `.announcement-bar` class. Now uses same CSS variables and Coastal Elegant theme across all pages. | index.html |
 
 ---
 
