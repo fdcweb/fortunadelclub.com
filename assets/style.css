@@ -23,7 +23,7 @@
 /* Reset */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-body { font-family: var(--font-body); background: var(--cream); color: #2D2D2D; line-height: 1.7; font-size: 16px; }
+body { font-family: var(--font-body); background: var(--cream); color: #1A1A1A; line-height: 1.7; font-size: 16px; }
 img { max-width: 100%; height: auto; display: block; }
 .logo-image { width: 42px !important; height: 42px !important; max-width: 42px !important; max-height: 42px !important; min-width: 42px !important; min-height: 42px !important; object-fit: contain !important; flex-shrink: 0; }
 a { color: var(--gold); text-decoration: none; transition: color var(--t); }

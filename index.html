@@ -116,17 +116,17 @@
        CSS CUSTOM PROPERTIES
     =========================== */
     :root {
-      --gold:        #C8962E;
-      --gold-light:  #E8B84B;
-      --gold-pale:   #F5E6C3;
-      --deep:        #1A1208;
-      --rich:        #2C1F08;
-      --cream:       #FAF6EE;
-      --muted:       #7A6A50;
-      --border:      #E2D5B8;
+      --gold:        #D4A574;
+      --gold-light:  #E8D4B8;
+      --gold-pale:   #F5EFE7;
+      --deep:        #006B8F;
+      --rich:        #004B66;
+      --cream:       #F8F9FA;
+      --muted:       #666666;
+      --border:      #D9D9D9;
       --white:       #FFFFFF;
       --radius:      10px;
-      --shadow:      0 4px 24px rgba(26,18,8,0.10);
+      --shadow:      0 4px 24px rgba(0,0,0,0.08);
       --font-head:   'Playfair Display', Georgia, serif;
       --font-body:   'DM Sans', sans-serif;
       --max-w:       1100px;
@@ -141,7 +141,7 @@
     body {
       font-family: var(--font-body);
       background: var(--cream);
-      color: var(--deep);
+      color: #1A1A1A;
       line-height: 1.7;
       font-size: 16px;
     }
@@ -154,25 +154,25 @@
        ANNOUNCEMENT BAR
     =========================== */
     .announcement-bar {
-      background: var(--gold);
-      color: var(--deep);
+      background: var(--deep);
+      color: #FFFFFF;
       text-align: center;
       padding: 10px 20px;
       font-size: 0.875rem;
       font-weight: 500;
       letter-spacing: 0.02em;
     }
-    .announcement-bar a { color: var(--deep); font-weight: 700; text-decoration: underline; }
+    .announcement-bar a { color: var(--gold); font-weight: 700; text-decoration: underline; }
 
     /* ===========================
        HEADER / NAV
     =========================== */
     header {
-      background: var(--deep);
+      background: #FFFFFF;
       position: sticky;
       top: 0;
       z-index: 100;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     }
     .nav-inner {
       max-width: var(--max-w);
@@ -197,14 +197,14 @@
       font-family: var(--font-head);
       font-size: 1.2rem;
       font-weight: 700;
-      color: var(--deep);
+      color: #FFFFFF;
       flex-shrink: 0;
     }
     .logo-text { line-height: 1.1; }
     .logo-name {
       font-family: var(--font-head);
       font-size: 1.15rem;
-      color: var(--gold-light);
+      color: var(--deep);
       font-weight: 700;
       display: block;
     }
@@ -218,7 +218,7 @@
 
     nav { display: flex; align-items: center; gap: 6px; }
     nav a {
-      color: #D4C9B0;
+      color: var(--deep);
       font-size: 0.85rem;
       font-weight: 400;
       padding: 6px 12px;
@@ -226,16 +226,18 @@
       transition: background var(--transition), color var(--transition);
     }
     nav a:hover, nav a.active {
-      background: rgba(200,150,46,0.15);
-      color: var(--gold-light);
+      background: #E0F2F7;
+      color: var(--deep);
+      font-weight: 500;
+    }
     }
     .nav-cta {
-      background: var(--gold) !important;
-      color: var(--deep) !important;
+      background: var(--deep) !important;
+      color: #FFFFFF !important;
       font-weight: 600 !important;
       padding: 7px 16px !important;
     }
-    .nav-cta:hover { background: var(--gold-light) !important; }
+    .nav-cta:hover { background: var(--gold) !important; color: #FFFFFF !important; }
 
     .hamburger {
       display: none;
