@@ -1,10 +1,10 @@
 # FortunaDelClub – Project Context File
 # Maintained by: Claude (AI Assistant) + FDC Web Manager
-# Last Updated: 2026-05-18
+# Last Updated: 2026-06-02
 # Repo: https://github.com/fdcweb/fortunadelclub.com
 # Live Site: https://www.fortunadelclub.com
 # Canonical repo root: /home/moplet04/fdc/fortunadelclub.com
-# Git Commits: 37aebdf → 4a84fe3
+# Git Commits: 37aebdf → c46ba2a
 
 ---
 
@@ -475,6 +475,7 @@ Standard flow:
 | 2026-05-06 | Converted to JS fetch-based shared includes — header, footer, ann-bar now single-source in assets/includes/ | assets/includes/, assets/main.js, assets/style.css, all 19 *.html |
 | 2026-05-25 | Logo incorporated — logo.png now displays in header and footer across all pages | assets/includes/header.html, assets/includes/footer.html, assets/style.css |
 | 2026-05-25 | Logo placement & sizing optimized — fixed relative paths and improved alignment | assets/includes/header.html, assets/includes/footer.html, assets/style.css |
+| 2026-06-02 | **Logo display debugging & resolution** — Root cause identified: logo.png was 2519×2611px (331KB), oversized source causing render issues. Resized to 96×100px (7.3KB). Applied inline styles for 42px constraint, added cache-busting to fetch calls. | assets/logo.png (resized), assets/includes/header.html, assets/includes/footer.html, assets/style.css, assets/main.js |
 
 ---
 
