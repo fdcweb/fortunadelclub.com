@@ -25,6 +25,7 @@
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body { font-family: var(--font-body); background: var(--cream); color: var(--deep); line-height: 1.7; font-size: 16px; }
 img { max-width: 100%; height: auto; display: block; }
+.logo-image { width: 42px; height: 42px; max-width: 42px !important; max-height: 42px !important; object-fit: contain; flex-shrink: 0; }
 a { color: var(--gold); text-decoration: none; transition: color var(--t); }
 a:hover { color: var(--gold-light); }
 ul { list-style: none; }
@@ -38,7 +39,6 @@ header { background: var(--deep); position: sticky; top: 0; z-index: 100; box-sh
 .nav-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 68px; }
 .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .logo-mark { width: 42px; height: 42px; background: var(--gold); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-family: var(--font-head); font-size: 1.1rem; font-weight: 700; color: var(--deep); flex-shrink: 0; }
-.logo-image { width: 42px; height: 42px; object-fit: contain; flex-shrink: 0; }
 .logo-name  { font-family: var(--font-head); font-size: 1rem; color: var(--gold-light); font-weight: 700; display: block; line-height: 1.2; }
 .logo-tag   { font-size: .7rem; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; display: block; }
 
