@@ -43,8 +43,8 @@ header { background: #FFFFFF; position: sticky; top: 0; z-index: 100; box-shadow
 .logo-tag   { font-size: .7rem; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; display: block; }
 
 nav { display: flex; align-items: center; gap: 4px; }
-nav a { color: var(--deep); font-size: .85rem; font-weight: 400; padding: 6px 11px; border-radius: 6px; transition: background var(--t), color var(--t); white-space: nowrap; }
-nav a:hover, nav a.active { background: #E0F2F7; color: var(--deep); font-weight: 500; }
+nav a { color: var(--deep); font-size: .85rem; font-weight: 400; padding: 6px 11px; border-radius: 6px; transition: background var(--t), color var(--t), border-bottom var(--t); white-space: nowrap; border-bottom: 2px solid transparent; }
+nav a:hover, nav a.active { background: #E0F2F7; color: var(--deep); font-weight: 500; border-bottom-color: var(--deep); }
 .nav-cta { background: var(--deep) !important; color: #FFFFFF !important; font-weight: 600 !important; }
 .nav-cta:hover { background: var(--gold) !important; color: #FFFFFF !important; }
 
@@ -76,7 +76,7 @@ nav a:hover, nav a.active { background: #E0F2F7; color: var(--deep); font-weight
 .hero-stats { display: flex; gap: 40px; justify-content: center; margin-top: 56px; padding-top: 40px; border-top: 1px solid rgba(200,150,46,.2); }
 .stat { text-align: center; }
 .stat-num { font-family: var(--font-head); font-size: 2rem; color: var(--gold-light); font-weight: 700; display: block; }
-.stat-label { font-size: .78rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.stat-label { font-size: .78rem; color: var(--gold); text-transform: uppercase; letter-spacing: .06em; font-weight: 500; }
 
 /* ── Page Hero (interior) ── */
 .page-hero { background: linear-gradient(135deg, #006B8F 0%, #004B66 100%); padding: 60px 24px 70px; text-align: center; position: relative; overflow: hidden; }
