@@ -1,14 +1,22 @@
 # FortunaDelClub – Project Context File
 # Maintained by: Claude (AI Assistant) + FDC Web Manager
-# Last Updated: 2026-06-02
+# Last Updated: 2026-06-05
 # Repo: https://github.com/fdcweb/fortunadelclub.com
 # Live Site: https://www.fortunadelclub.com
 # Canonical repo root: /home/moplet04/fdc/fortunadelclub.com
-# Git Commits: 37aebdf → 6ab2fc2
+# Git Commits: 37aebdf → [pending commit after Monsoon Bumper update]
 
 ---
 
-## � Recent Changes & Roadmap
+## 🎯 Recent Changes & Roadmap
+
+### ✅ Completed (2026-06-05)
+- **Kerala Bumper 2026 Rotation** ✅
+  - Updated [kerala-bumper.html](kerala-bumper.html) page title & metadata from Vishu Bumper 2026 (BR-109) to Monsoon Bumper 2026 (BR-110)
+  - Updated `<title>`, meta description, keywords, and OG tags to reflect current active bumper
+  - Banner (ann-bar.html) already updated to "Monsoon Bumper 2026 (BR-110) – Draw on 18 July 2026"
+  - Page content shows Monsoon Bumper as "Tickets Open" (current draw) and Vishu Bumper marked as "Concluded"
+  - All metadata now aligned with page content
 
 ### ✅ Completed (2026-05-07)
 - **Phase 1: Disclaimer infrastructure** ✅
