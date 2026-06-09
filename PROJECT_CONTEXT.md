@@ -1,14 +1,65 @@
 # FortunaDelClub – Project Context File
 # Maintained by: Claude (AI Assistant) + FDC Web Manager
-# Last Updated: 2026-06-05
+# Last Updated: 2026-06-09
 # Repo: https://github.com/fdcweb/fortunadelclub.com
 # Live Site: https://www.fortunadelclub.com
 # Canonical repo root: /home/moplet04/fdc/fortunadelclub.com
-# Git Commits: 37aebdf → [pending commit after Monsoon Bumper update]
+# Git Commits: 37aebdf → [pending commit after SEO & LLM improvements]
 
 ---
 
 ## 🎯 Recent Changes & Roadmap
+
+### ✅ Completed (2026-06-09) — SEO & LLM Reach Improvements (12 Tasks)
+- **TASK 1: Fixed broken JSON-LD block on fdc-updates.html** ✅
+  - Merged two back-to-back script tags (one had no JSON)
+  - Updated logo URL from `/logo.png` to `/assets/logo.png`
+  - Updated datePublished and dateModified to 2026-06-05
+  
+- **TASK 2: Fixed Organization schema logo URL on index.html** ✅
+  - Changed logo URL from `https://www.fortunadelclub.com/logo.png` to `https://www.fortunadelclub.com/assets/logo.png`
+  
+- **TASK 3: Added Event schema for Monsoon Bumper 2026** ✅
+  - Added Event JSON-LD to kerala-bumper.html and fdc-updates.html
+  - Schema includes BR-110 details: draw date 18 July 2026, ticket price ₹250, 1st prize ₹1 crore
+  
+- **TASK 4: Updated all sitemap.xml lastmod dates** ✅
+  - Indexed vs Upcoming pages: Updated 5 pages to 2026-06-05 (draws.html, kerala-bumper.html, fdc-updates.html, index.html)
+  - Stable pages: Kept legal/format pages at 2026-05-07 (Phase 2 migration date)
+  
+- **TASK 5: Updated llms.txt draw status** ✅
+  - Marked BR-110 Monsoon Bumper 2026 as "Current Active" with draw date: 18 July 2026
+  - Marked BR-109 Vishu Bumper 2026 as "Concluded" (draw: 23 May 2026)
+  
+- **TASK 6: Added WebSite schema with SearchAction to index.html** ✅
+  - Enables voice search and AI assistant intent understanding
+  - Search template targets faq.html?q={search_term_string}
+  
+- **TASK 7: Added Organization schema to footer.html** ✅
+  - Inserted compact Organization JSON-LD in footer include
+  - Now appears on all 19 pages automatically via include system
+  - Includes phone, logo, and FDC branding
+  
+- **TASK 8: Added dateModified to WebPage schemas** ✅
+  - draws.html: Added dateModified 2026-06-05 + publisher field
+  - kerala-bumper.html: Added dateModified 2026-06-05 + publisher field
+  - fdc-updates.html: Already has dateModified in NewsArticle schema
+  
+- **TASK 9: Improved logo alt text in header and footer** ✅
+  - Changed from "FortunaDelClub Logo" to "FortunaDelClub – Lottery Assistance for Goa and Kerala"
+  - Applied to both assets/includes/header.html and assets/includes/footer.html
+  
+- **TASK 10: Added WebPage schemas to kerala-weekly.html and goa-weekly.html** ✅
+  - Added rich structured data for content-heavy pages
+  - Both include publisher Organization reference
+  
+- **TASK 11: Removed meta keywords tags from all 19 pages** ✅
+  - Removed no-value keywords meta from: index, goa-lottery, kerala-lottery, draws, faq, about, contact, fdc-updates, goa-weekly, goa-monthly, goa-ticket-format, kerala-weekly, kerala-bumper, kerala-ticket-format, kerala-gallery, privacy-policy, terms-of-use, responsible-participation
+  
+- **TASK 12: Updated PROJECT_CONTEXT.md draw schedule & analytics** ✅
+  - Updated Kerala Bumper table: BR-110 now shows "18 Jul 2026" and "Tickets Open"
+  - Marked GSC and Bing sitemap submissions as ✅ COMPLETE
+  - Added comprehensive Change Log entry
 
 ### ✅ Completed (2026-06-05)
 - **Kerala Bumper 2026 Rotation** ✅
@@ -346,11 +397,10 @@ All 19 pages load them at runtime via JavaScript fetch — no build step needed.
 - CSS hides placeholders until loaded (no flash of unstyled content)
 
 ### ⚠️ Still Pending
-- [ ] Submit sitemap to Google Search Console
-      URL: https://www.fortunadelclub.com/sitemap.xml
-      Go to: search.google.com/search-console → Sitemaps → Add sitemap
-- [ ] Submit sitemap to Bing Webmaster Tools
-      Go to: bing.com/webmasters → Sitemaps
+- [x] Submit sitemap to Google Search Console ✅ COMPLETE
+- [x] Submit sitemap to Bing Webmaster Tools ✅ COMPLETE
+- [ ] Verify GA4 is receiving data (check Realtime in GA4 dashboard)
+- [ ] Verify GSC ownership confirmed after push
 
 ---
 
@@ -391,8 +441,8 @@ Social:
 ### Kerala Bumper
 | Draw No. | Name                         | Draw Date   | Status        |
 |----------|------------------------------|-------------|---------------|
-| BR-110   | Monsoon Bumper 2026          | Jul 2026    | Upcoming      |
-| BR-109   | Vishu Bumper 2026            | 23 May 2026 | Tickets Open  |
+| BR-110   | Monsoon Bumper 2026          | 18 Jul 2026 | Tickets Open  |
+| BR-109   | Vishu Bumper 2026            | 23 May 2026 | Concluded     |
 | BR-108   | Summer Bumper 2026           | Mar 2026    | Concluded     |
 | BR-107   | XMAS New Year Bumper 2025-26 | Jan 2026    | Concluded     |
 
