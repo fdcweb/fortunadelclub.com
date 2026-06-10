@@ -412,7 +412,7 @@ All 19 pages load them at runtime via JavaScript fetch — no build step needed.
 | Operations    | +91 9061039049         |
 | Administrator | +91 9895039039         |
 | Email         | fdc@fortunadelclub.com |
-| Address       | 91SpringBoard, St. Inez, Panjim, Goa – 403001 |
+| Address       | St. Inez, Panjim, Goa – 403001 |
 
 WhatsApp Community – Goa:    https://chat.whatsapp.com/DDS7bXsxUv1AtjZvQZHo9n
 WhatsApp Community – Kerala: https://chat.whatsapp.com/EHgfdK3zp9I6CEoK3fjj3q
