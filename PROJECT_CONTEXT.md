@@ -1,6 +1,6 @@
 # FortunaDelClub – Project Context File
 # Maintained by: Claude (AI Assistant) + FDC Web Manager
-# Last Updated: 2026-06-09
+# Last Updated: 2026-06-26
 # Repo: https://github.com/fdcweb/fortunadelclub.com
 # Live Site: https://www.fortunadelclub.com
 # Canonical repo root: /home/moplet04/fdc/fortunadelclub.com
@@ -60,6 +60,14 @@
   - Updated Kerala Bumper table: BR-110 now shows "18 Jul 2026" and "Tickets Open"
   - Marked GSC and Bing sitemap submissions as ✅ COMPLETE
   - Added comprehensive Change Log entry
+
+- **TASK 13: Fixed Ahrefs crawl issue for external outbound links** ✅
+  - Added `rel="nofollow noopener noreferrer"` to flagged external links in 19 HTML pages
+  - Prevents crawlers from following targets blocked by external robots.txt
+
+- **TASK 14: Regenerated sitemap.xml on 2026-06-26** ✅
+  - Rebuilt `/sitemap.xml` with the current live page set and current lastmod date
+  - Confirmed 18 main pages are included
 
 ### ✅ Completed (2026-06-05)
 - **Kerala Bumper 2026 Rotation** ✅
