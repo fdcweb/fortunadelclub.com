@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.fortunadelclub.com/sitemap.xml
+Sitemap: https://fortunadelclub.com/sitemap.xml
 
 # Crawl delay (optional, courteous)
 Crawl-delay: 10

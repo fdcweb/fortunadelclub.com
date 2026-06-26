@@ -2,7 +2,7 @@
 # Maintained by: Claude (AI Assistant) + FDC Web Manager
 # Last Updated: 2026-06-26
 # Repo: https://github.com/fdcweb/fortunadelclub.com
-# Live Site: https://www.fortunadelclub.com
+# Live Site: https://fortunadelclub.com
 # Canonical repo root: /home/moplet04/fdc/fortunadelclub.com
 # Git Commits: 37aebdf → [pending commit after SEO & LLM improvements]
 
@@ -17,7 +17,7 @@
   - Updated datePublished and dateModified to 2026-06-05
   
 - **TASK 2: Fixed Organization schema logo URL on index.html** ✅
-  - Changed logo URL from `https://www.fortunadelclub.com/logo.png` to `https://www.fortunadelclub.com/assets/logo.png`
+  - Changed logo URL from `https://fortunadelclub.com/logo.png` to `https://fortunadelclub.com/assets/logo.png`
   
 - **TASK 3: Added Event schema for Monsoon Bumper 2026** ✅
   - Added Event JSON-LD to kerala-bumper.html and fdc-updates.html
@@ -353,14 +353,14 @@ All interior pages should follow this pattern:
 
 | Element                | Value / Status                                        |
 |------------------------|-------------------------------------------------------|
-| GA4 Stream Name        | www.fortunadelclub.com                                |
-| GA4 Stream URL         | https://www.fortunadelclub.com                        |
+| GA4 Stream Name        | fortunadelclub.com                                |
+| GA4 Stream URL         | https://fortunadelclub.com                        |
 | GA4 Stream ID          | 2591749072                                            |
 | GA4 Measurement ID     | G-G79CKSSW2H  ✅ Live in all 19 pages                 |
 | GSC Verification token | -OFTPDapVZ8j9vUOMfxWrlYf2gJA52HzwCEWyjXtuVQ ✅ Live  |
-| og:image URL           | https://www.fortunadelclub.com/assets/og-image.jpg    |
-| Sitemap URL            | https://www.fortunadelclub.com/sitemap.xml            |
-| robots.txt             | https://www.fortunadelclub.com/robots.txt             |
+| og:image URL           | https://fortunadelclub.com/assets/og-image.jpg    |
+| Sitemap URL            | https://fortunadelclub.com/sitemap.xml            |
+| robots.txt             | https://fortunadelclub.com/robots.txt             |
 
 ### In Every Page <head>
 | Tag / Snippet          | Status  | Notes                              |

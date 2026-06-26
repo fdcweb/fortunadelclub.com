@@ -1,1 +1,1 @@
-Website of FortunaDelClub accessible via www.fortunadelclub.com
+Website of FortunaDelClub accessible via fortunadelclub.com
