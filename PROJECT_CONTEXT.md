@@ -417,7 +417,7 @@ All 19 pages load them at runtime via JavaScript fetch — no build step needed.
 | Role          | WhatsApp / Phone       |
 |---------------|------------------------|
 | Primary       | +91 9645049039         |
-| Operations    | +91 9061039049         |
+| Operations    | +91 9645049039         |
 | Administrator | +91 9895039039         |
 | Email         | fdc@fortunadelclub.com |
 | Address       | St. Inez, Panjim, Goa – 403001 |
