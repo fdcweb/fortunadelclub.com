@@ -447,12 +447,13 @@ Social:
 | Sunday    | Samrudhi       |
 
 ### Kerala Bumper
-| Draw No. | Name                         | Draw Date   | Status        |
-|----------|------------------------------|-------------|---------------|
-| BR-110   | Monsoon Bumper 2026          | 18 Jul 2026 | Tickets Open  |
-| BR-109   | Vishu Bumper 2026            | 23 May 2026 | Concluded     |
-| BR-108   | Summer Bumper 2026           | Mar 2026    | Concluded     |
-| BR-107   | XMAS New Year Bumper 2025-26 | Jan 2026    | Concluded     |
+| Draw No. | Name                         | Draw Date   | Status                     |
+|----------|------------------------------|-------------|----------------------------|
+| BR-111   | Thiruvonam Bumper 2026       | Upcoming    | Tickets Open / Upcoming    |
+| BR-110   | Monsoon Bumper 2026          | 18 Jul 2026 | Concluded                  |
+| BR-109   | Vishu Bumper 2026            | 23 May 2026 | Concluded                  |
+| BR-108   | Summer Bumper 2026           | Mar 2026    | Concluded                  |
+| BR-107   | XMAS New Year Bumper 2025-26 | Jan 2026    | Concluded                  |
 
 ### Goa
 | Draw    | Name          | Time        |
