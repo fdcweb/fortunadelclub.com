@@ -1,14 +1,22 @@
 # FortunaDelClub – Project Context File
 # Maintained by: Claude (AI Assistant) + FDC Web Manager
-# Last Updated: 2026-06-26
+# Last Updated: 2026-08-13
 # Repo: https://github.com/fdcweb/fortunadelclub.com
 # Live Site: https://fortunadelclub.com
-# Canonical repo root: /home/moplet04/fdc/fortunadelclub.com
-# Git Commits: 37aebdf → [pending commit after SEO & LLM improvements]
+# Canonical repo root: /home/norbu/fdc/website/fortunadelclub.com.worktrees/json-ld-schema-implementation
+# Git Commits: 6d9bff7 → [latest commit in working branch; JSON-LD hardening in progress]
 
 ---
 
 ## 🎯 Recent Changes & Roadmap
+
+### ✅ Completed (2026-08-13) — JSON-LD schema hardening & policy alignment
+- **TASK 15: Hardened Organization and page-level JSON-LD metadata** ✅
+  - Added `@id` anchors to Organization and WebSite schema blocks
+  - Included canonical `publisher` references on the homepage and FAQ/contact pages
+  - Added organization email/contact metadata consistent with the site contact details
+  - Kept schema aligned with the project’s legal positioning and disclosure policy
+  - Preserved existing compliance-safe wording: informational service, no ticket sales, no draw authority
 
 ### ✅ Completed (2026-06-09) — SEO & LLM Reach Improvements (12 Tasks)
 - **TASK 1: Fixed broken JSON-LD block on fdc-updates.html** ✅
@@ -97,10 +105,10 @@
   - Logged this change in `PROJECT_CONTEXT.md` for future reference
 
 ### 📋 Next Steps
-- [ ] Audit all pages for terminology compliance and remove any remaining risky wording
-- [ ] Verify Organization JSON-LD schema on `index.html`
-- [ ] Verify FAQPage JSON-LD schema on `faq.html`
-- [ ] Ensure BreadcrumbList JSON-LD on all interior pages
+- [x] Audit all pages for terminology compliance and remove any remaining risky wording
+- [x] Verify Organization JSON-LD schema on `index.html`
+- [x] Verify FAQPage JSON-LD schema on `faq.html`
+- [x] Ensure BreadcrumbList JSON-LD on all interior pages
 - [ ] Add internal linking to `responsible-participation.html` and `terms-of-use.html` where appropriate
 - [ ] Integrate disclaimer into `inject_includes.py` for automated future injection
 - [ ] Add SEO/accessibility audit report

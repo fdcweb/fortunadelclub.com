@@ -32,12 +32,14 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://fortunadelclub.com/#organization",
     "name": "FortunaDelClub",
     "alternateName": "FDC",
     "url": "https://fortunadelclub.com",
     "logo": "https://fortunadelclub.com/assets/logo.png",
     "description": "Independent lottery assistance and informational service for Goa State Lottery and Kerala State Lottery.",
     "foundingDate": "2017",
+    "email": "fdc@fortunadelclub.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "St. Inez",
@@ -46,11 +48,13 @@
       "postalCode": "403001",
       "addressCountry": "IN"
     },
+    "areaServed": "IN",
     "contactPoint": [
       {
         "@type": "ContactPoint",
         "telephone": "+91-9645049039",
         "contactType": "customer service",
+        "email": "fdc@fortunadelclub.com",
         "availableLanguage": ["English", "Hindi", "Malayalam"]
       }
     ],
@@ -68,9 +72,15 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://fortunadelclub.com/#website",
     "name": "FortunaDelClub",
     "url": "https://fortunadelclub.com",
     "description": "Independent lottery assistance and informational service for Goa State Lottery and Kerala State Lottery.",
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://fortunadelclub.com/#organization",
+      "name": "FortunaDelClub"
+    },
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
