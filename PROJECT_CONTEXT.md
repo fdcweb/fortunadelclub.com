@@ -109,6 +109,9 @@
 - [x] Verify Organization JSON-LD schema on `index.html`
 - [x] Verify FAQPage JSON-LD schema on `faq.html`
 - [x] Ensure BreadcrumbList JSON-LD on all interior pages
+- [x] Update Organization addressLocality to "Panaji" across site schema
+- [x] Add contextual WhatsApp CTAs (wa.me prefilled links) on Goa hub and Goa draw pages
+- [x] Implement GA4 click-tracking for whatsapp_click, phone_click, email_click and official_result_click events in `assets/ga4.js`
 - [ ] Add internal linking to `responsible-participation.html` and `terms-of-use.html` where appropriate
 - [ ] Integrate disclaimer into `inject_includes.py` for automated future injection
 - [ ] Add SEO/accessibility audit report
