@@ -578,3 +578,109 @@ Standard flow:
 ---
 *Single source of truth for the FortunaDelClub website project.
 Update the Change Log after every change and push to git.*
+
+---
+
+## 🧭 Agent Handover — Phase 1 (SEO / GEO Goa)
+
+This section contains consolidated information for other agents and contributors who will continue implementing, reviewing, or extending the website work.
+
+Purpose
+- Provide a compact, actionable handover for engineers, content editors, and analytics/SEO agents to continue Phase 1 work and safely perform Phase 2.
+
+Branch & commits
+- Work branch: agents/seo-geo-optimization-goa-lottery
+- All Phase 1 commits are on that branch and have been merged/committed locally. Review commits with:
+  - git log --oneline main..agents/seo-geo-optimization-goa-lottery
+
+High-level Phase 1 summary (already applied)
+- Organization schema addressLocality updated to: "Panaji" (index.html + footer include)
+- Contextual WhatsApp CTAs added across Goa pages (prefilled wa.me links)
+  - Visible label standardized to: "Get Goa Details"
+  - WA CTAs include data attributes for tracking: data-lottery-type, data-draw-type, data-cta-position
+- GA4 click-tracking added in assets/ga4.js
+  - Events emitted: whatsapp_click, phone_click, email_click, official_result_click
+  - Event payload includes: page_location, page_title, CTA_position, lottery_type, draw_type (where applicable)
+- Goa hub (goa-lottery.html) enhanced for AI/SEO:
+  - Short "Quick answer" at top
+  - Crawlable attribute summary table (lottery, authority, Rajshree 10 time, Rajshree 300 frequency, location)
+- Rajshree pages updated with question-style headings to match search intent
+- Visible "Last Updated" E-E-A-T footer added to goa-weekly.html and goa-monthly.html
+- PROJECT_CONTEXT.md updated with Phase 1 notes
+
+Files changed (Phase 1)
+- index.html
+- assets/includes/footer.html
+- assets/ga4.js
+- goa-lottery.html
+- goa-weekly.html
+- goa-monthly.html
+- goa-ticket-format.html
+- PROJECT_CONTEXT.md
+
+WhatsApp CTA conventions used
+- Phone number (prefilled wa.me): +91-9645049039 (current operational number in site code)
+- CTA label: "Get Goa Details"
+- Example pre-filled message templates used (URL-encoded):
+  - Goa hub / general: "Hi FDC, I'm on your Goa page and would like assistance with the Goa State Lottery"
+  - Rajshree 10 page: "Hi FDC, I'm interested in Rajshree 10 participation assistance"
+  - Rajshree 300 page: "Hi FDC, I'm interested in Rajshree 300 participation assistance"
+  - Ticket format page: "Hi FDC, I'd like help verifying my Goa lottery ticket"
+
+GA4 tracking details
+- Measurement ID: G-G79CKSSW2H (assets/ga4.js)
+- Events implemented client-side in assets/ga4.js (click capture on anchor tags):
+  - whatsapp_click { page_location, page_title, CTA_position, lottery_type, draw_type }
+  - phone_click { page_location, page_title, telephone }
+  - email_click { page_location, page_title, email }
+  - official_result_click { page_location, page_title, outbound_url }
+- Validation: use GA4 DebugView to confirm events. If events are not visible, check that gtag loaded and that click handler is not blocked by CSP or script errors.
+
+Testing & QA checklist for agents
+1. Schema validation
+   - Run Google Rich Results / Schema Validator for index.html, goa-lottery.html, goa-weekly.html, goa-monthly.html, goa-ticket-format.html
+   - Confirm BreadcrumbList, Organization, WebSite, FAQPage and WebPage schemas validate without errors
+2. WhatsApp CTA behaviour
+   - Click each "Get Goa Details" CTA on staging/preview
+   - Confirm wa.me opens with the correct prefilled message and phone number
+3. GA4 event verification
+   - Open GA4 DebugView
+   - Click CTAs and verify whatsapp_click events show up with required parameters
+   - Click an official result outbound link (myrajshree.com or statelotteries.goa.gov.in) and verify official_result_click event
+4. No regressions
+   - Verify Kerala pages and existing WhatsApp community links still work
+   - Run a quick crawl (e.g., sitebot or Screaming Frog) to detect broken links or duplicate titles
+5. Accessibility & Mobile
+   - Smoke test CTAs and table rendering on mobile viewport
+
+Operational notes for future agents
+- If adding more CTAs, mark them with the class wa-cta and set data attributes: data-lottery-type (goa/kerala), data-draw-type (rajshree10, rajshree300, ticket-format, hub), data-cta-position (hero, cta-band, contact-box, page-top)
+- Do NOT publish or automate "live results" pages unless a reliable and verifiable official feed exists. If automating results ingestion later, implement server-side fetch + signing + timestamps and clearly show the official source and timestamp on the page.
+- Keep existing Kerala pages intact; any consolidation must include 301 redirects and sitemap updates.
+
+Next prioritized tasks (Phase 1 continuation)
+- Validate structured data across updated pages (high priority)
+- Mark whatsapp_click as conversion in GA4 (analytics team)
+- Add breadcrumb JSON-LD to any interior pages missing it
+- Improve internal linking across Goa cluster (hub → rajshree → ticket-format → schedule → verification)
+- Lightweight performance improvements (image sizes, preload key fonts) to improve Core Web Vitals
+
+Phase 2 guide (after 30–60 days of data)
+- Use Search Console query data to prioritise content expansions
+- Create targeted pages only if Search Console shows viable impressions and positions
+- Consider Hindi or Malayalam language expansion only after significant traction from English pages
+
+Contacts & resources
+- Project owner / web manager: fdc@fortunadelclub.com
+- Analytics: ensure GA4 account access for event validation
+- Repository: https://github.com/fdcweb/fortunadelclub.com
+
+Notes on permissions
+- This document intentionally excludes any credentials or secrets. Agents requiring access to analytics or GCP should request access from the project owner.
+
+If you are taking ownership of any of the next tasks, update PROJECT_CONTEXT.md with a short entry: who is doing it, date started, and any blockers.
+
+---
+
+End of Agent Handover — Phase 1
+
