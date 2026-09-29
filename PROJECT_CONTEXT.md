@@ -3,8 +3,8 @@
 # Last Updated: 2026-09-29
 # Repo: https://github.com/fdcweb/fortunadelclub.com
 # Live Site: https://fortunadelclub.com
-# Canonical repo root: /home/norbu/fdc/website/fortunadelclub.com.worktrees/json-ld-schema-implementation
-# Git Commits: 6d9bff7 → [latest commit in working branch; JSON-LD hardening in progress]
+# Canonical repo root: /home/norbu/fdc/website/fortunadelclub.com.worktrees/fortuna-del-club-seo-geo-audit
+# Git Commits: latest working branch includes SEO/GEO metadata refinements and source/verification notes
 
 ---
 
