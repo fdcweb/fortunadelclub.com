@@ -1,13 +1,10 @@
 User-agent: *
 Allow: /
 
-# Sitemap
+# Public sitemap
 Sitemap: https://fortunadelclub.com/sitemap.xml
 
-# Crawl delay (optional, courteous)
-Crawl-delay: 10
-
-# AI crawlers – allow full indexing for AI discoverability
+# AI crawlers – allow discovery and indexing for public informational pages
 User-agent: GPTBot
 Allow: /
 
