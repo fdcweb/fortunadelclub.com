@@ -1,6 +1,6 @@
 # FortunaDelClub – Project Context File
 # Maintained by: Claude (AI Assistant) + FDC Web Manager
-# Last Updated: 2026-08-13
+# Last Updated: 2026-09-29
 # Repo: https://github.com/fdcweb/fortunadelclub.com
 # Live Site: https://fortunadelclub.com
 # Canonical repo root: /home/norbu/fdc/website/fortunadelclub.com.worktrees/json-ld-schema-implementation
@@ -9,6 +9,8 @@
 ---
 
 ## 🎯 Recent Changes & Roadmap
+
+- **2026-09-29:** Marked Thiruvonam Bumper (BR-111) as Concluded and added Pooja Bumper 2026 (BR-112) as Tickets Open / Upcoming across site (kerala-bumper.html, draws.html, index.html, fdc-updates.html). Archived BR-111 prize-structure restored.
 
 ### ✅ Completed (2026-08-13) — JSON-LD schema hardening & policy alignment
 - **TASK 15: Hardened Organization and page-level JSON-LD metadata** ✅
@@ -460,7 +462,7 @@ Social:
 ### Kerala Bumper
 | Draw No. | Name                         | Draw Date   | Status                     |
 |----------|------------------------------|-------------|----------------------------|
-| BR-111   | Thiruvonam Bumper 2026       | Upcoming    | Tickets Open / Upcoming    |
+| BR-111   | Thiruvonam Bumper 2026       | Concluded   | Concluded (draw held)      |
 | BR-110   | Monsoon Bumper 2026          | 18 Jul 2026 | Concluded                  |
 | BR-109   | Vishu Bumper 2026            | 23 May 2026 | Concluded                  |
 | BR-108   | Summer Bumper 2026           | Mar 2026    | Concluded                  |
