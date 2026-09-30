@@ -25,6 +25,7 @@ FortunaDelClub does NOT:
 - Weekly Lottery: Rajshree 10 — conducted daily at 5:40 PM (Mon–Sun)
   - Mon: SOM | Tue: MANGAL | Wed: BUDH | Thu: GURU | Fri: SHUKRA | Sat: SHANI | Sun: RAVI
 - Monthly Lottery: Rajshree 300 — conducted monthly per official notification
+- Site copy note: The public-facing Goa page uses a narrative intro rather than a key-value summary table or prompt-style “Quick answer” block.
 - Official reference: https://statelotteries.goa.gov.in/
 
 ### Kerala State Lottery Assistance
